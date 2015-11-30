@@ -42,6 +42,8 @@ I hope to include a vast amount of work this year as well, but hopefully keep br
 
 Download my <a href="#">NLT document</a> and <a href="#">live CV</a>.
 
+And please <a href="https://github.com/partcoffee/uni" target="_blank">explore the GitHub repository</a> behind this website as well, as it is a key part of what I am submitting. This accompanies the <a href="/portfolio">portfolio case study</a> and is mainly referring to the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">Sass folder</a>, <a href="https://github.com/partcoffee/uni/tree/master/css" target="_blank">main Sass file</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>.
+
 <div class="div"></div>
 
 ## Juggling work and university

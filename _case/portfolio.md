@@ -62,7 +62,7 @@ The site sticks to roughly 60-80 characters per line, offering a comfortable rea
 
 Jekyll is a static site generator and will serve static HTML-files for the end user. The site is generated locally, so we can still benefit from PHP-like includes on our footer and header &mdash; this will let us avoid the pain of writing static HTML over and over again. It also makes updates a breeze.
 
-Everything else goes without saying, but should mentioned anyway: asset compression (JS, CSS, HTML), image compression, limit HTTP requests and third party resources. This should leave us within a reasonable performance-budget of 2 second load time on our initial request &mdash; <a href="#" target="_blank">which it did</a>.
+Everything else goes without saying, but should mentioned anyway: asset compression (JS, CSS, HTML), image compression, limit HTTP requests and third party resources. This should leave us within a reasonable performance-budget of 2 second load time on our initial request.
 
 <div class="div"></div>
 
@@ -74,13 +74,15 @@ Everything else goes without saying, but should mentioned anyway: asset compress
 
 ## Maintainability & technology
 
-Without getting too technical, I can mention that the site is not very client-friendly. <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> in itself runs on Ruby, which is installed via Node and NPM. That's already a bit too much for most clients.
+<p class="pull">Without getting too technical, I can mention that the site is not very client-friendly. <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> in itself runs on Ruby, which is installed via Node and NPM. That's already a bit too much for most clients.<span>View the code behind this site on <a href="https://github.com/partcoffee/uni" target="_blank">GitHub</a></span></p>
 
 However, this is not a client website, and the lack of a content management system gives me more control as a developer. All my content is written in Markdown, which is a simple and easy-to-grasp language and saves you hours of work in the long run, compared to writing HTML-tags for everything. The <a href="https://daringfireball.net/projects/markdown/syntax" target="_blank">documentation</a> gives a thorough overview of what the language is about.
 
 I have made my life easier by listing projects in a json-format in a data-folder though. A loop runs through the data to create the project listing on the homepage. I still code in <a href="http://sass-lang.com/" target="_blank">Sass</a> to benefit from variables and functions in CSS, but I moved on to <a href="http://gulpjs.com/" target="_blank">Gulp</a> to speed up my workflow. However, GitHub Pages will only support a naked Jekyll build with no plugins or third party build tools, and thus this site might have been generated with the default Jekyll ruby generator.
 
-I have made the source-code available on GitHub, which should show the raw files I work with. This should also show the progression from A to B through my <a href="https://github.com/partcoffee/partcoffee.github.io/commits/master" target="_blank">commit history</a>.
+I have made the source-code available on GitHub, which should show the raw files I work with. This should also show the progression from A to B through my <a href="https://github.com/partcoffee/uni/commits/master" target="_blank">commit history</a>.
+
+You can also see how the code works in the <a href="https://github.com/partcoffee/uni/blob/master/css/main.scss" target="_blank">main SCSS-file</a>, which extends to all the included scss-files and js files. If you are a developer, I strongly encourage you to clone to repo or read through it on GitHub as everything is commented to satisfy the assessment sheet.
 
 
 <div class="div"></div>
