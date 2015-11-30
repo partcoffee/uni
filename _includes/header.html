@@ -1,0 +1,44 @@
+{% include nav.html %}
+
+{% if page.journal == true %}
+<header class="header">
+	<h1 class="header-text up">{{ page.headline }}</h1>
+	<h2 class="header-subtext up wait">{% if page.subtitle %}{{ page.subtitle }}{% else %}{% include words.html %} read{% endif %}</h2>
+</header>
+{% elsif page.case == true %}
+<header class="page-header">
+	<h1 class="page-header-text up">{{ page.headline }}</h1>
+	<h2 class="page-header-subtext up wait">{% if page.subtitle %}{{ page.subtitle }}{% else %}{% include words.html %} read{% endif %}</h2>
+</header>
+{% elsif page.article == true %}
+<header class="page-header">
+	<h1 class="page-header-text up">{{ page.headline }}</h1>
+	<h2 class="page-header-subtext up wait">{% if page.subtitle %}{{ page.subtitle }}{% else %}{% include words.html %} read{% endif %}</h2>
+</header>
+{% elsif page.error == true %}
+<header class="header error">
+	<h1 class="header-text">ERROR 404</h1>
+	<p>Well, this is embarrassing. I can't find what you're looking for. It might have been moved or deleted. Did you type the URL correctly?</p>
+	<a href="/" class="button button-right">
+		<svg class="icon icon-chevron-thin-right">
+			<use xlink:href="#icon-chevron-thin-right"></use>
+		</svg>
+		Back to homepage
+	</a>
+</header>
+{% else %}
+<header class="header">
+	<!-- <h1 class="header-text up">Web designer &amp; developer based in Norway.</h1> -->
+	<h1 class="header-text up">The open road still softly calls, like a nearly forgotten song of childhood.</h1>
+	<!-- <h2 class="header-subtext up wait">– Carl Sagan</h2> -->
+	<!-- <h1 class="header-text home-text up"><span>Magnus Skare</span>, designer and web developer based in Northern Norway.</h1> -->
+	{% for post in site.posts limit:1 %}
+		<a href="{{ post.url }}" class="button button-right up wait">
+			<svg class="icon icon-chevron-thin-right">
+				<use xlink:href="#icon-chevron-thin-right"></use>
+			</svg>
+			Latest journal entry
+		</a>
+	{% endfor %}
+</header>
+{% endif %}

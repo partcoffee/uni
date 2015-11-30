@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    #Typography
+\*------------------------------------*/
+
+/* Global heading-styles */
+h1, h2, h3 {
+	/* Specifies how the browser should render the text and what it should prioritise (speed, legibility etc.) */
+	text-rendering: optimizeLegibility;
+	font-family: $primary;
+	font-weight: 300;
+}
+
+/* Specific subheadline styling */
+h2 {
+	font-size: 20px;
+
+	@media (min-width: $break) {
+		font-size: 26px;
+	}
+}
+
+/* Global body-text styling */
+p, li {
+	text-rendering: optimizeLegibility;
+	font: 400 14px/1.8 $secondary;
+
+	@media (min-width: $break) {
+		font-size: 15px;
+	}
+}
+
+/* Global link styles, animation and hover/focus effect */
+a {
+	color: $light;
+	text-decoration: none;
+	@include animate(0.2s ease-out);
+
+	&:hover, &:focus {
+		@extend .active;
+	}
+}
+
+/* Specifies a colour for our active-link */
+.active {
+	color: $main-color;
+}
+
+/* Blockquote global styling in our articles, makes our lives easier than adding as we don't need classnames */
+blockquote {
+	margin: 0;
+	position: relative;
+
+	p {
+		font: 500 120%/1.8 $secondary;
+		margin: 48px auto;
+		text-align: center;
+	}
+
+	/* Specific styling for a second paragraph in a blockquote – we use this to show the author/person behind the quote */
+	p:nth-of-type(2) {
+		margin-top: -42px;
+		font-size: 90%;
+		color: lighten($main-color, 20%);
+
+		&:before {
+			content: '– ';
+		}
+	}
+}

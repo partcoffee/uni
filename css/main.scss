@@ -1,0 +1,700 @@
+---
+---
+/*------------------------------------*\
+    #Variables
+\*------------------------------------*/
+
+
+/* Fonts */
+/* Proxima Nova is defined twice here as I intend to use it for headings AND body-text.
+While it may seem strange to define this twice, it gives me the option to change the body text
+with one line of code, instead of updating it everywhere else.
+*/
+$primary: 'proxima-nova', sans-serif;
+$secondary: 'proxima-nova', sans-serif;
+
+
+/* Colours */
+/* I define my colours early in order to reuse them throughout my document.
+This is the power of preprocessors, and comes in very handy to avoid repetition. */
+$main-color: #555;
+$light: #9f9f9f;
+$highlight-color: #363a42;
+$color: #eaeaea;
+
+
+/* Other */
+/* These are primarily breakpoints or abolsute volues I intend to keep using throughout my document */
+$break: 520px;
+$total: 960px;
+$margins: 30px;
+
+
+/* Import */
+/* I keep smaller files and import them to the main document to make things more manageble. When you import files
+in Sass and not CSS you're not triggering another HTTP-request, but merely concatenating the file into your main CSS file.
+This is good for performance – especially on mobile. */
+@import 'mixins';
+@import 'grid';
+@import 'typography';
+
+
+
+
+
+/*------------------------------------*\
+    #General
+\*------------------------------------*/
+
+html, body {
+	/* Removes margins and padding, gives us a blank canvas */
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	width: 100%;
+}
+
+body {
+	background: #fafafa; /* Middle of white and f6 */
+	color: $main-color; /* Main colour used throughout the document */
+	font-size: 100%;
+	font-weight: normal;
+	overflow-x: hidden; /* Prevents horizontal scrollbars if they ever occur */
+	-webkit-text-size-adjust: 100%; /* Because iPhones are dumb sometimes and will scale fonts oddly in landscape mode */
+	-webkit-font-smoothing: antialiased; /* Alternative font antialiasing */
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+	/* Better border-box model as it will subtract paddings instead of adding them.
+	I.e. if you define a certain width, it will STAY that way, regardless of padding */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	/* Reset */
+	border: 0;
+	max-width: 100%;
+}
+
+ul, li {
+	/* Reset */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Element_Style
+\*------------------------------------*/
+
+
+/* General layout container */
+.wrapper {
+	margin: 8% auto;
+	max-width: $total;
+	width: 100%;
+
+	@media (min-width: $break) {
+		width: 80%;
+	}
+
+	/* Media-queries nested inside the element for maintainability. This is available to us because we use Sass (.scss) */
+	@media (min-width: ($total * 1.5)) { /* $total is already defined, but we can use maths to further manipulate the value */
+		max-width: ($total * 1.25);
+	}
+
+	@media (max-width: $break - 1) {
+		header, footer, nav, .grid {
+			width: 85%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		article {
+			h1, h2, h3, p, ul {
+				width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+
+/* Navigation */
+.nav {
+	position: relative;
+	width: 100%;
+	z-index: 999; /* To always be on top */
+}
+
+/* Can be excluded, but useful if I want to add another nav-element to my page */
+.nav-links {
+	display: inline-block;
+	font-size: 12px;
+	
+	a {
+		display: block;
+		padding: 4px;
+	}
+
+	@media (min-width: $break) {
+		font-size: 14px;
+
+		a {
+			padding: 4px 6px;
+		}
+	}
+
+	&:first-of-type a {
+		padding-left: 0;
+	}
+
+	&:nth-last-child(2) a {
+		padding-right: 0;
+	}
+}
+
+/* Defining the icon/logo used. We could use SVG graphics, but CSS is very powerful */
+.nav-icon {
+	display: inline-block;
+	font-size: 12px;
+
+	a {
+		background: lighten($main-color, 20%); /* Again, we manipulate predefined values */
+		color: transparent;
+		display: block;
+		height: 6px;
+		line-height: 0;
+		margin-top: 11px;
+		padding: 3px;
+		position: relative;
+		width: 20px;
+
+		/* I'm using pseudo-elements that exist in the "shadow-DOM" in order to use a single element for complex shapes. */
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100px;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		/* Animation timing for for the nav icon. I'm using a predefined mixin to handle prefixes,
+		   but this is not really needed to for modern browsers */
+		&, &:after {
+			@include animate(.4s ease-out);
+		}
+
+		&:after {
+			background: lighten($main-color, 20%);
+			content: '';
+			height: 6px;
+			left: 36px;
+			position: absolute;
+			top: 0;
+			width: 64px;
+		}
+
+		&:hover, &:focus {
+			margin-left: 80px;
+			outline: 0;
+
+			&:before {
+				margin-left: -80px;
+			}
+
+			&:after {
+				left: -80px;
+			}
+		}
+
+		@media (min-width: $break) {
+			padding: 4px 6px;
+			height: 8px;
+
+			&:after {
+				height: 8px;
+			}
+		}
+	}
+}
+
+
+/* Header */
+.header {
+	max-width: $break;
+	padding: ((($break/5)/2)+10) 0 (($break/5)/2);
+	width: 95%;
+
+	@media (min-width: $break) {
+		padding: 10% 0;
+	}
+	
+	@media (min-width: ($break) * 1.5) {
+		padding: ($break/6) 0;
+	}
+
+	@media (max-height: $break) {
+		padding: ($padding * 2.2) 0;
+	}
+
+	.button {
+		margin-top: 10px;
+	}
+
+}
+
+.header-text {
+	font: 300 26px/1.2 $primary;
+	margin: 0 0 0 (26px/-20);
+	padding: 4% 0;
+
+	@media (min-width: ($break * 1.2)) {
+		font-size: 38px;
+		font-weight: 100;
+		margin-left: (30px/-20);
+		padding: 2% 0;
+	}
+
+	@media (min-width: $total) {
+		font-size: 40px;
+		margin-left: (40px/-20);
+		padding: 0;
+	}
+}
+
+/* We can easily add more classes are they are performant and easy to maintain.
+   For this instance, we wanted lighter text on the homepage, so we added a conditional argument to our header.html section to add this class */
+.home-text {
+	color: lighten($main-color, 20%);
+
+	span {
+		color: $highlight-color;
+	}
+}
+
+/* Option to have text below the headline if needed */
+.header-subtext {
+	font: 400 12px/1 $primary;
+	margin: 20px 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	@media (min-width: $break) {
+		font-size: 13px;
+	}
+}
+
+/* Optional CSS extends to add more pages if I need it */
+.page-header {
+	@extend .header;
+}
+
+.page-header-text {
+	@extend .header-text;
+}
+
+.page-header-subtext {
+	@extend .header-subtext;
+	margin: 10px 0 0;
+
+	@media (min-width: $break) {
+		font-size: 12px;
+	}
+}
+
+
+/* Articles */
+.article {
+	img:first-child {
+		margin-top: ($margins/2) !important;
+		/* I rarely use !important as it makes the code harder to maintain, but this project is relatively small so I'll let it slide */
+	}
+
+	/* Specific styles for grids inside articles */
+	.grid {
+		display: block;
+		margin: $margins auto;
+		width: 100%;
+
+		img {
+			margin: 0 !important;
+			/* Echoing my statement on !important above */
+		}
+	}
+
+	h1, h2, h3, p, ul {
+		max-width: ($break + 20);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h2 {
+		font-weight: 300;
+	}
+	
+	/* Specific styling to everything but a link is achived by using the :not pseudo-selector */
+	a:not(.button) {
+		border-bottom: 1px solid $color;
+		box-shadow: inset 0 -5px 0 $color;
+		color: inherit;
+		padding: 2px 5px;
+		background: $color;
+
+		&:hover {
+			opacity: .75;
+		}
+	}
+
+	ul {
+		margin: $margins auto;
+	}
+
+	img:not(.project-image) {
+		display: block;
+		margin: $margins auto;
+		max-width: 100%;
+		max-height: $total;
+		width: auto;
+
+		&:first-of-type {
+			max-width: 100%;
+		}
+	}
+
+	> .show {
+		/* This style is applied to the show-class if it's a direct child of the .article class */
+		max-width: ($break*1.6);
+	}
+
+	.narrow {
+		max-width: ($break + 20);
+	}
+}
+
+/* Leading paragraph is slightly larger than the body-font */
+.lead {
+	font-size: 17px;
+
+	@media (min-width: $break) {
+		font-size: 18px;
+	}
+}
+
+/* Adds custom functionality to <span> elements inside a pull-class, which makes it super easy to add new pull-quotes where I need them */
+.pull {
+	position: relative;
+
+	span {
+		/* We should arguably not be using absolute values to position our pull-quote,
+		   but as it's only visible on < 1092px displays, we can get away with it */
+		border-top: 1px solid $color;
+		color: $main-color;
+		font-weight: 300;
+		display: none;
+		font-size: 17px;
+		padding-top: 8px;
+		margin-top: 8px;
+		position: absolute;
+		right: -220px;
+		top: -.5em;
+		width: 160px;
+
+		@media (min-width: ($break*2.1)) {
+			display: block;
+		}
+	}
+}
+
+/* Handles captions for images and gives them the correct margins for desktop, mobile and everything in between */
+.caption {
+	display: block;
+	margin: $margins 0;
+	position: relative;
+
+	img, img:first-of-type {
+		margin: 0 auto !important;
+	}
+
+	strong {
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+	span {
+		color: $light;
+		display: block;
+		font: 400 12px/1.6 $secondary;
+		margin: 0 auto;
+		max-width: 80%;
+		padding-top: 10px;
+		width: 100%;
+	}
+}
+
+
+/* Footer styling */
+.footer {
+	padding: ($break/10) 0 0;
+
+	@media (min-width: $break) {
+		padding: ($break/5) 0 0;
+	}
+}
+
+/* Removes the border for our footer on our homepage through conditional logic in liquid templating */
+.footer-home {
+	padding-top: 8%;
+
+	.footer-list {
+		padding-top: 0;
+		border-top: 0;
+	}
+}
+
+.footer-list {
+	padding-top: 20px;
+	border-top: 1px solid rgba($light, .25);
+	text-align: center;
+}
+
+.footer-links {
+	@extend .nav-links;
+
+	&:last-of-type {
+		display: block;
+	}
+}
+
+
+/* Helper classes that didn't fit into a particular category */
+
+/* List of skills styling, similar to links */
+.skill-list {
+	li {
+		border-bottom: 1px solid $color;
+		box-shadow: inset 0 -5px 0 $color;
+		color: inherit;
+		background: $color;
+		display: inline-block;
+		margin: 0 0 4px 0;
+		padding: 0 8px;
+	}
+}
+
+/* Animation class for our body and anything else that may need transitions */
+.animate {
+	@include animate(0.2s ease-out);
+}
+
+/* Borders added for images/mockups with light/similar colours to our background colour */
+.browser {
+	background: linear-gradient(rgba(darken($color, 10%), 0), darken($color, 10%));
+	padding: 0 1px 1px;
+}
+
+/* Ignores the maximum height set on images if we want to display taller images (full-page screenshots etc.) */
+.tall {
+	max-height: none !important;
+
+	@media (min-width: $total) {
+		max-width: ($break + 200) !important;
+	}
+}
+
+/* Makes images sit tighter in a "gallery" if nested inside any element with the together-class */
+.together {
+	img {
+		max-height: none !important;
+	}
+
+	@media (max-width: ($break - 1)) {
+		margins: $margins auto;
+
+		img {
+			margin: 0 !important;
+		}
+	}
+}
+
+/* Makes our video responsive if embeded from Vimeo or the likes */
+.article-video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	margin: $margins auto;
+}
+
+.article-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* A bit heavy, but covers every button with left/right variation */
+.button {
+	color: $main-color;
+	display: inline-block;
+	font: 500 10px/1 $secondary;
+	margin: $margins 0 0;
+	padding: 15px 28px 12px 42px;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-transform: translateX(-7px);
+	transform: translateX(-7px);
+	-moz-transition: color .2s ease-out, opacity .2s ease-out;
+	-o-transition: color .2s ease-out, opacity .2s ease-out; /* Can be ignored */
+	-webkit-transition: color .2s ease-out, opacity .2s ease-out;
+	transition: color .2s ease-out, opacity .2s ease-out;
+	letter-spacing: 1px;
+
+	@media (min-width: $break) {
+		font-size: 11px;
+	}
+
+	svg {
+		height: 14px;
+		left: 16px;
+		position: absolute;
+		top: 13px;
+		-moz-transition: .2s ease-out;
+		-o-transition: .2s ease-out; /* Can still be ignored */
+		-webkit-transition: .2s ease-out;
+		transition: .2s ease-out;
+		width: 14px;
+		fill: $main-color;
+	}
+
+	&:hover {
+		opacity: .75;
+
+		svg {
+			left: 10px;
+		}
+	}
+
+	/* Sass (.scss) gives us the power to manipulate the name of the class through nesting.
+	   We are currently targeting the '.button-right' class */
+	&-right {
+		padding: 15px 42px 12px 0;
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		margin: $margins 0;
+		
+		svg {
+			left: auto;
+			right: 16px;
+		}
+
+		&:hover {
+
+			svg {
+				left: auto;
+				right: 10px;
+			}
+		}
+	}
+
+	.journal & {
+		margin: 10px 0 30px 0;
+	}
+}
+
+/* On-demand removal of top-margins */
+.no-margin {
+	margin-top: 0;
+}
+
+/* Slideshow styling. We import a third-party file to handle the rest */
+.article .show {
+	max-width: none;
+	padding: 0;
+	position: relative;
+
+	img {
+		margin: 0 !important;
+	}
+
+	li {
+		line-height: 0;
+		float: left;
+	}
+
+	svg {
+		@include vertical-align;
+		@include animate(.2s ease-out);
+		background: rgba(black, .2);
+		-webkit-box-sizing: content-box; /* Because Android.. */
+		box-sizing: content-box; /* Because Android.. */
+		cursor: pointer;
+		height: 40px;
+		padding: 10px;
+		width: 20px;
+		z-index: 99;
+		fill: white;
+	}
+}
+
+/* On-demand spacing which is super useful to let our content breathe without adding strange class-names or inline styling */
+.div {
+	display: block;
+	height: 5px;
+	width: 100%;
+
+	@media (min-width: $break) {
+		height: 15px;
+	}
+}
+
+/* On-demand color from our highlight-color variable */
+.highlight {
+	color: $highlight-color;
+}
+
+/* On-demand text-alignment. Default is left and this makes it centred */
+.mid {
+	text-align: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Responsive
+\*------------------------------------*/
+
+/* If we need something global we can add it here, but for maintainability, we nest it in our class names */
+
+
+
+
+
+/*------------------------------------*\
+    #Animations
+\*------------------------------------*/
+
+/* Animations and CSS keyframes */
+@import 'animations';
+
+/* Third-party slider styling */
+@import 'slider';
+
+/* Specific to print */
+@import 'print';
+
+
+
+
+

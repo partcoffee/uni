@@ -1,0 +1,17 @@
+# Site settings
+title: Magnus Skare
+description: University portfolio by Magnus Skare
+baseurl: ""
+url: ""
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Build settings
+markdown: kramdown
+include: ['_pages', '_case']
+
+# Time zone
+timezone: Europe/London

@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #Mixins
+\*------------------------------------*/
+
+/* My custom mixins for extended functionality in Sass (.scss) */
+
+@mixin vertical-align {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin animate($time) {
+	-webkit-transition: $time;
+	-moz-transition: $time;
+	-o-transition: $time; /* Can be ignored */
+	transition: $time;
+}

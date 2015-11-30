@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #Print
+\*------------------------------------*/
+
+/* Print-specifc styling */
+
+@media print {
+	body {
+		/* Saves ink! */
+		background: transparent;
+	}
+
+	article {
+		/* Adds a pseudo-element after every link, which displays the complete URL (href) when printed */
+		a:after {
+			content: ' ('attr(href)')';
+		}
+	}
+
+	nav, .button, footer {
+		/* Not very useful and it saves us more ink */
+		display: none;
+	}
+}

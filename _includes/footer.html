@@ -1,0 +1,32 @@
+<footer class="footer{% if page.case %}{% else %} footer-home{% endif %}">
+	<ul class="footer-list">
+		<li class="footer-links">
+			<a href="https://twitter.com/MagnusSkare">Twitter</a>
+		</li>
+		<li class="footer-links">
+			<a href="https://dribbble.com/PartCoffee/">Dribbble</a>
+		</li>
+		<li class="footer-links">
+			<a href="https://github.com/partcoffee/">GithHub</a>
+		</li>
+		<li class="footer-links">
+			<a href="https://instagram.com/magnusskare/">Instagram</a>
+		</li>
+		<li class="footer-links">
+			<a href="/">Powered by coffee and love</a>
+		</li>
+	</ul>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src='{{ site.baseurl }}/js/main.js'></script>
+{% if page.slider %}<script src='{{ site.baseurl }}/js/slide.js' async ></script>{% endif %}
+{% if page.scroll %}<script>
+$('#scroll').click(function(e) {
+	e.preventDefault();
+	$('body, html').animate({
+		scrollTop: $($.attr(this, 'href')).offset().top -100
+	}, 750);
+});
+</script>{% endif %}
+{% include warning.html %}

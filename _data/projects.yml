@@ -1,0 +1,27 @@
+- name: Formalities
+  image: /img/show/blank.png
+  link: /formalities/
+
+- name: Riktig Spor
+  image: /img/show/1.jpg
+  link: /riktigspor/
+
+- name: Riktig Spor Projects
+  image: /img/show/blank.png
+  link: /projects/
+
+- name: Workflow & Sketchbook
+  image: /img/show/2.jpg
+  link: /workflow-and-sketchbook/
+
+- name: Secondary Work
+  image: /img/show/blank.png
+  link: /secondary/
+
+- name: Portfolio
+  image: /img/show/blank.png
+  link: /portfolio/
+
+- name: Reflection
+  image: /img/show/3.jpg
+  link: /reflection/
