@@ -82,7 +82,7 @@ I have made my life easier by listing projects in a json-format in a data-folder
 
 I have made the source-code available on GitHub, which should show the raw files I work with. This should also show the progression from A to B through my <a href="https://github.com/partcoffee/uni/commits/master" target="_blank">commit history</a>.
 
-You can also see how the code works in the <a href="https://github.com/partcoffee/uni/blob/master/css/main.scss" target="_blank">main SCSS-file</a>, which extends to all the included scss-files and js files. If you are a developer, I strongly encourage you to clone to repo or read through it on GitHub as everything is commented to satisfy the assessment sheet.
+You can also see how the code works in the <a href="https://github.com/partcoffee/uni/blob/master/css/main.scss" target="_blank">main SCSS-file</a>, which extends to all the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">included scss-files</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>. If you are a developer, I strongly encourage you to clone to repo or read through it on GitHub as everything is commented to satisfy the assessment sheet.
 
 
 <div class="div"></div>

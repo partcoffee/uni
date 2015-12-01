@@ -123,15 +123,16 @@ I use Git for my personal projects, but at work I am the only developer, and thu
 <div class="div"></div>
 
 <div class="article-video" id="video">
-	<iframe src="https://player.vimeo.com/video/86443370?color=fff&amp;title=0&amp;byline=0&amp;portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/86443370">Concept Someone [Showcase]</a> from <a href="https://vimeo.com/saphiralol">Magnus Skare</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+	<iframe src="https://player.vimeo.com/video/147452061?color=fff&amp;title=0&amp;byline=0&amp;portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/147452061">Sketchbook</a> from <a href="https://vimeo.com/saphiralol">Magnus Skare</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </div>
-HER KOMMER DET VIDEO. SKRIV SEKUND I ARTIKKELAN, ALTSÅ "SE SEKUND X FOR SKETCHES"
 
 <div class="div"></div>
 
 ## Sketchbook
 
-As I couldn't physically submit my sketchbook, I had to submit it digitally. And as I had no time to scan my entire sketchbook, I made a short video. The notes are unfortunately in Norwegian, but you are free to pause wherever you want. HD is available on Vimeo.com, as embded HD videos requires a Pro version.
+As I couldn't physically submit my sketchbook, I had to submit it digitally – and as I had no time to scan my entire sketchbook, I made a short video instead. The notes are unfortunately in Norwegian, but you are free to pause wherever you want. The video ends with the notes for the video itself and a picture of how it was shot, which I thought was a clever touch.
+
+HD is available on Vimeo.com, as embded HD videos requires a Pro version – I would highly recommend <a href="https://vimeo.com/147452061" target="_blank">watching it in HD</a>.
 
 <div class="div"></div>
 

@@ -26,7 +26,14 @@ See all the <a href="/projects">projects</a> I contributed to.
 
 I quickly had to widen my comfort zone in order to work efficiently. While I am comfortable developing relatively static sites, dynamic and editable content is a new world to me. Necessary to meet client needs, certainly, but undiscovered lands to me nonetheless.
 
-The current plan of action is to expand our web horizon, where I play a key role. I hope I can continue to improve in order to make us the very best at this in Northern Norway. 
+The current plan of action is to expand our web horizon, where I play a key role. I hope I can continue to improve in order to make us the very best at this in Northern Norway.
+
+<div class="div"></div>
+
+{::nomarkdown}
+<img src="../img/riktigspor/business-card.jpg" alt="Riktig Spor business card">
+{:/}
+
 
 <div class="div"></div>
 
@@ -43,11 +50,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, 
 {:/}
 
 <div class="div"></div>
-
-<!-- <blockquote>
-	<p>Sitat</p>
-	<p>Brita, General Manager and Advisor</p>
-</blockquote> -->
 
 <blockquote>
 	<p>Sitat</p>
@@ -95,7 +97,7 @@ Looking back at the <a href="/projects">projects</a> I contributed to, I am priv
 
 The experience of working here so far has been great, and while I certainly do make mistakes on a regular basis, I learn from it and adapt – and they let me, which I believe is beneficial for both parties.
 
-I have experienced great launch-events and undertaken small, medium and large-scale websites. I also had to explore the server-side aspect of the web, along with dymaic programming languages like PHP – both of which being fairly new to me. I hope to become more confident as time passes, but I will hopefully never stop learning for that reason.
+I have experienced great launch-events and undertaken small, medium and large-scale websites. I also had to explore the server-side aspect of the web, along with dynamic programming languages like PHP – both of which being fairly new to me. I hope to become more confident as time passes, but I will hopefully never slow down or stop learning new things.
 
 See all my <a href="/projects">projects</a> for Riktig Spor.
 

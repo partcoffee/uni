@@ -40,9 +40,9 @@ permalink: /formalities/
 
 I hope to include a vast amount of work this year as well, but hopefully keep brevity in mind this time. I'd also like to clarify that I can not show every single project from my work placement, due to contracts and work agreements.
 
-Download my <a href="#">NLT document</a> and <a href="#">live CV</a>.
+Download my <a href="#">NLT document</a> and <a target="_blank" href="../img/formalities/cv.pdf">live CV</a>.
 
-And please <a href="https://github.com/partcoffee/uni" target="_blank">explore the GitHub repository</a> behind this website as well, as it is a key part of what I am submitting. This accompanies the <a href="/portfolio">portfolio case study</a> and is mainly referring to the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">Sass folder</a>, <a href="https://github.com/partcoffee/uni/tree/master/css" target="_blank">main Sass file</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>.
+And please <a href="https://github.com/partcoffee/uni" target="_blank">explore the GitHub repository</a> behind this website as well, as it is a key part of what I am submitting. This accompanies the <a href="/portfolio">portfolio case study</a> and is mainly referring to the comments in the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">Sass folder</a>, <a href="https://github.com/partcoffee/uni/tree/master/css" target="_blank">main Sass file</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>.
 
 <div class="div"></div>
 
@@ -80,3 +80,19 @@ To clarify, I have been working for Riktig Spor as of September 1st, and tuning 
 I also have a fair amount of unfinished or unrelated (to the university) projects. I simply ran out of time to do other projects this year, but I have included bits and pieces anyway. They may not be as polished or well thought out as everything else, but I have included them <a href="/secondary">in this portfolio</a> to emphasise their existence anyway.
 
 <div class="div"></div>
+
+## Acknowledgements
+
+I would also like to emphasise my deepest gratitude for the help and support throughout this semester.
+
+**Brita Bjørnbakk**, for her trust and investment in me as a student and developer.
+
+**Debs Wilson and Paul Wilson**, for their continued trust, support, belief in my abilities and time spent helping me.
+
+**University of Winchester staff**, for their help to make this semester possible to complete from abroad.
+
+**Riktig Spor**, for their continued support, encouraging words and flexibility when it comes to my time spent studying.
+
+<div class="div"></div>
+
+
