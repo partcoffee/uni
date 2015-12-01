@@ -35,14 +35,16 @@ permalink: /formalities/
 
 <p class="pull">
 	As a preface to this semester, I'd like to mention my <a href="http://magnusskare.science/uni/" target="_blank">previous portfolio</a>. While I believe it did manage to showcase my work in a professional manner, I have to agree with the feedback I received &mdash; it was impenetrable. The sheer volume of work came across as overwhelming, mainly due to my subjective fear of seeming shallow. I wanted to show depth, but completely disregarded the end user (you) in the process.
-	<span class="entry">For reference: the <a href="http://magnusskare.science/uni/" target="_blank">previous portfolio</a>, hosted on a seperate web server</span>
+	<span class="entry">For reference: the <a href="http://magnusskare.science/uni/" target="_blank">previous portfolio</a>, hosted on a separate web server</span>
 </p>
 
-I hope to include a vast amount of work this year as well, but hopefully keep brevity in mind this time. I'd also like to clarify that I can not show every single project from my work placement, due to contracts and work agreements.
+I hope to include a vast amount of work this year as well, but hopefully with brevity in mind this time – especially as there might be more work to show this semester. I'd also like to clarify that I can not show every single project from my work placement, due to contracts and work agreements.
+
+Please <a href="https://github.com/partcoffee/uni" target="_blank">explore the GitHub repository</a> behind this website as well, as it is a key part of what I am submitting. This accompanies the <a href="/portfolio">portfolio case study</a> and is mainly referring to the comments in the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">Sass folder</a>, <a href="https://github.com/partcoffee/uni/blob/master/css/main.scss" target="_blank">main Sass file</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>.
+
+You can also reference <a href="https://vimeo.com/147452061" target="_blank">my sketchbook</a> at any given time.
 
 Download my <a href="#">NLT document</a> and <a target="_blank" href="../img/formalities/cv.pdf">live CV</a>.
-
-And please <a href="https://github.com/partcoffee/uni" target="_blank">explore the GitHub repository</a> behind this website as well, as it is a key part of what I am submitting. This accompanies the <a href="/portfolio">portfolio case study</a> and is mainly referring to the comments in the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">Sass folder</a>, <a href="https://github.com/partcoffee/uni/tree/master/css" target="_blank">main Sass file</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>.
 
 <div class="div"></div>
 

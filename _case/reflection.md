@@ -18,7 +18,7 @@ permalink: /reflection/
 
 <p class="pull">First and foremost, I am really thankful for the opportunity given to me by Riktig Spor and the University of Winchester for letting me work in Norway while I study. I thoroughly enjoyed working here, and in fact, it doesn't really feel like work just yet – because I am simply having fun doing it. I learn something new every day and I hope I will continue to do so for all my foreseeable future.<span>Read my <a href="/riktigspor">thoughts on working for Riktig Spor</a> for context</span></p>
 
-From work I learned how to deal with clients and projects. I covered several projects on my own, forcing me to consider every aspect of the task, including cost, design, development, time management and delivery. I believe the <a href="/projects">projects</a> displays a great amount of work, and while I really wanted to show you all the projects I had the pleasure on working on, not all of them were ready for public a release just yet.
+From work I learned how to deal with clients and projects. I covered several projects on my own, forcing me to consider every aspect of the task, including cost, design, development, time management and delivery. I believe the <a href="/projects">projects</a> displays a great amount of work, and while I really wanted to show you all the projects I had the pleasure of working on, not all of them were ready for public a release just yet.
 
 I had hopes of improving my my skills in client management, business strategies and the modern web development workflow – and I believe I did, in all of these areas.
 
@@ -81,7 +81,7 @@ Also, software to manage all of this:
 
 ## Secondary work
 
-My side projects are usually initiated by boredom or lacking challenges. This is not been the case since I started working full-time and therefore the majority of my sideprojects have been put on hold for now.
+My side projects are usually initiated by boredom or lacking challenges. This has not been the case since I started working full-time and therefore the majority of my sideprojects have been put on hold for now.
 
 There are obviously reasons to work on side-projects, and I do in fact encourage it. My motivation used to be a richer portfolio, but after landing a job I enjoy, my personal portfolio has not been of high priority. I am sure my lecturers and professors can relate to this. Even people lecturing me on the importance of portfolio can not find the time to update their own after landing a job they like.
 
@@ -97,7 +97,7 @@ I feel this is justified, but I do intend to pick up more side-projects and upda
 
 ## Portfolio reflections
 
-The purpose of this website is to show my work in a reflective manner. I believe I achieved this goal in a organised way by listing all my work in dedicated categories. I avoided bloat by having separate sections for development/processes, reflections and final outcomes.
+The purpose of this website is to show my work in a reflective manner, and I believe I achieved that goal by assigning work to different categories. I avoided bloat by having separate sections for development/processes, reflections and final outcomes.
 
 The portfolio is based upon tutor feedback from my previous semester, which in return was based on feedback from the semester before that. This should show adaptation to critique and should, in theory, offer a better user experience than the last.
 

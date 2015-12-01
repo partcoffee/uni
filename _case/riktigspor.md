@@ -18,7 +18,7 @@ permalink: /riktigspor/
 
 As a general preface to this section, I should mention my responsibilities. I am admittedly still a student, and with that I am still learning &mdash; which is also the ultimate goal of this work placement. However, I am the primary web developer at this company, and thus I quickly took on the responsibility of hosting, developing and designing websites and web applications. I also cover photography at times, and the role of the web advisor for clients.
 
-See all the <a href="/projects">projects</a> I contributed to.
+See all the <a href="/projects">projects</a> I contributed to and <a href="/workflow-and-sketchbook">how I worked to get there</a>.
 
 <div class="div"></div>
 
@@ -52,7 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, 
 <div class="div"></div>
 
 <blockquote>
-	<p>Sitat</p>
+	<p>Magnus has given us a crucial set of skills, previously lacking at Riktig Spor. His technical competence and understanding has lifted our web-based products and contributed to increased client satisfaction.</p>
 	<p>Jofrid, Senior Communication Advisor</p>
 </blockquote>
 
@@ -72,7 +72,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, 
 </blockquote>
 
 <blockquote>
-	<p>Working with Magnus is a great pleasure. He is accurate, eloquent and efficient. He brings to us much needed technical know-how. Magnus is also a nice guy, and despite his somewhat freakish lunch habits, he fits in at Riktig Spor.</p>
+	<p>Working with Magnus is a great pleasure. He is accurate, eloquent and efficient. He brings to us much needed technical know-how, and really fits in at Riktig Spor.</p>
 	<!-- Orginal -->
 	<!-- <p>Working with Magnus is a great pleasure. He is accurate, eloquent and efficient. He brings to us much needed technical know-how. Magnus is also a nice guy. He is clean, well behaved and, despite his some what freekish lunch habits, fits in at Riktig Spor.</p> -->
 	<p>Fredric, Project Manager</p>
@@ -99,7 +99,7 @@ The experience of working here so far has been great, and while I certainly do m
 
 I have experienced great launch-events and undertaken small, medium and large-scale websites. I also had to explore the server-side aspect of the web, along with dynamic programming languages like PHP – both of which being fairly new to me. I hope to become more confident as time passes, but I will hopefully never slow down or stop learning new things.
 
-See all my <a href="/projects">projects</a> for Riktig Spor.
+See all my <a href="/projects">projects</a> for Riktig Spor and <a href="/workflow-and-sketchbook">how I worked to get there</a>.
 
 <div class="div"></div>
 

@@ -78,7 +78,7 @@ You can follow us on <a href="https://instagram.com/riktigspor/" target="_blank"
 
 ## MKK
 
-<p class="pull">Mosjøen Kulde &amp; Klimaservice (MKK) is a Northern Norway-based company delivering heating and cooling units to the entire world. My responsibility for this particular project covered client management, web development, design, server- og domain-configurations, content management system tutoring and delivery.<span>Visit the live site at <a href="http://mkk.ac" target="_blank">mkk.ac</a></span></p>
+<p class="pull">Mosjøen Kulde &amp; Klimaservice (MKK) is a Northern Norway-based company delivering heating and cooling units to the entire world. My responsibility for this particular project covered client management, web development, design, server- and domain-configurations, content management system tutoring and delivery.<span>Visit the live site at <a href="http://mkk.ac" target="_blank">mkk.ac</a></span></p>
 
 The site was developed for Wordpress, giving the client complete control over every aspect of the site post-launch. Along the way I also developed a contract for the client(s) to sign as we finish the website, leaving them responsible for future updates to the content management system, potential plugins or any other piece software. The client also requested a logo update to make it more modern, yet keeping the existing shapes and colours.
 
