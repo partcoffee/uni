@@ -12,9 +12,7 @@ permalink: /secondary/
 
 This is simply a list of projects I have been working on, in no particular order. They may not be as polished or well thought out as everything else, but I have included them anyway in order to highlight their existence. The vast majority of this is unfinished and should be treated as such.
 
-I feel like I should include everything in this portfolio, but these projects weren't necessarily directly related to my course. Thus, they act as bonus content to the portfolio. So without any further ado, here they are, in no particular order:
-
-Hint: Right-click and open large images in a new tab for some crisp details.
+I feel like I should include everything in this portfolio, but these projects weren't necessarily directly related to my course. Thus, they act as bonus content to the portfolio.
 
 <div class="div"></div>
 

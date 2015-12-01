@@ -85,9 +85,9 @@ The source-code is <a href="https://github.com/partcoffee/uni" target="_blank">a
 
 ## Alternative approach
 
-<p class="pull">This site was certainly not the plan all along, and I did have several different approaches in mind. I have been experimenting with cover-pages, one-page layouts and similar design propositions to this one. However, subjectively and based on colleague feedback, this seemed to be the best approach to highlight all my work in a structured and efficient manner. The blank canvas should give each project the attention it deserves, while simutanously giving me the freedom to be as brief or as thorough as appropriate.<span>The <a href="/workflow-and-sketchbook">workflow & sketchbook</a>-section highlights how I work</span></p>
+<p class="pull">This site was certainly not the plan all along, and I did have several different approaches in mind. I have been experimenting with cover-pages, one-page layouts and similar design propositions to this one. However, subjectively and based on colleague feedback, this seemed to be the best approach to highlight all my work in a structured and efficient manner. The blank canvas should give each project the attention it deserves, while simutanously giving me the freedom to be as brief or as thorough as I have to.<span>The <a href="/workflow-and-sketchbook">workflow & sketchbook</a>-section highlights how I work</span></p>
 
-I have included some different approaches as screenshots, but live examples are available upon request. I also have a couple of more screenshots from my process under <a href="/secondary">secondary work</a>. These are all fully responsive and should function well in all modern browsers &mdash; but that's a given these days.
+I have included some different approaches as screenshots, but live examples are available upon request. You can see more examples under <a href="/secondary">secondary work</a>. These are all fully responsive and should function well in all modern browsers.
 
 <div class="div"></div>
 
@@ -102,9 +102,9 @@ I have included some different approaches as screenshots, but live examples are 
 
 ## Reflection & conclusion
 
-I hopefully improved upon the <a href="http://magnusskare.science/uni/" target="_blank">previous university portfolio</a> by keeping user experience in mind from the very beginning. By developing a dedicated site for my university projects, I could tailor the site to a very specific group of people &mdash; and as I know who these users are, and I'm aware of their feedback from previous projects, it was easy to aim for shorter and richer articles.
+I hopefully improved upon the <a href="http://magnusskare.science/uni/" target="_blank">previous university portfolio</a> by keeping user experience in mind from the very beginning. By developing a dedicated site for my university projects, I could tailor the site to a very specific group of people &mdash; and as I'm aware of their feedback from previous projects along with the assessment sheet, it was easy to know what to include and what to leave out.
 
-I hope this site is able to reflect the amount of work and effort I have put into this semester. Because I really do believe I have the results to prove it.
+I hope this site is able to reflect the amount of work and effort I have put into this semester.
 
 <div class="div"></div>
 

@@ -79,7 +79,7 @@ To clarify, I have been working for Riktig Spor as of September 1st, and tuning 
 
 ## Secondary work
 
-I also have a fair amount of unfinished or unrelated (to the university) projects. I simply ran out of time to do other projects this year, but I have included bits and pieces anyway. They may not be as polished or well thought out as everything else, but I have included them <a href="/secondary">in this portfolio</a> to emphasise their existence anyway.
+I also have a fair amount of unfinished or unrelated (to the university) projects. They may not be as polished or well thought out as everything else, but I have included them <a href="/secondary">in this portfolio</a> to emphasise their existence anyway.
 
 <div class="div"></div>
 

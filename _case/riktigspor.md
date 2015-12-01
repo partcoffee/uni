@@ -14,19 +14,19 @@ permalink: /riktigspor/
 
 <div class="div"></div>
 
-<p class="lead pull">For the past four months I have been working as a designer and web developer at Riktig Spor in Bodø, Norway &mdash; and I hope to continue working here for my next semester. I work five days a week, covering a range of clients &mdash; from small websites to larger corporate ones. This article aims to cover the majority of these, but leaves out a few for contract reasons.<span>See all the <a href="/projects">projects</a> I contributed to</span></p>
+<p class="lead pull">For the past four months I have been working as a designer and web developer at Riktig Spor in Norway &mdash; and I hope to continue working here for my next semester. I work five days a week, covering a range of clients &mdash; from small websites to larger corporate ones. This article aims to cover the majority of these.<span>See all the <a href="/projects">projects</a> I contributed to</span></p>
 
 As a general preface to this section, I should mention my responsibilities. I am admittedly still a student, and with that I am still learning &mdash; which is also the ultimate goal of this work placement. However, I am the primary web developer at this company, and thus I quickly took on the responsibility of hosting, developing and designing websites and web applications. I also cover photography at times, and the role of the web advisor for clients.
 
-See all the <a href="/projects">projects</a> I contributed to and <a href="/workflow-and-sketchbook">how I worked to get there</a>.
+See all the <a href="/projects">projects</a> I contributed to and <a href="/workflow-and-sketchbook">how I work</a>.
 
 <div class="div"></div>
 
 ## The experience
 
-I quickly had to widen my comfort zone in order to work efficiently. While I am comfortable developing relatively static sites, dynamic and editable content is a new world to me. Necessary to meet client needs, certainly, but undiscovered lands to me nonetheless.
+I quickly had to widen my comfort zone in order to work efficiently. While I am comfortable developing relatively static sites, dynamic and editable content is a new world to me.
 
-The current plan of action is to expand our web horizon, where I play a key role. I hope I can continue to improve in order to make us the very best at this in Northern Norway.
+I believe I quickly adapted to this technology, and today I am developing Wordpress sites without much problem. I would refer to the projects to outline what I experienced specifically, and while I did continuously leave my comfort-zone, I have learned a lot this semester – and for that I am thankful.
 
 <div class="div"></div>
 
@@ -93,13 +93,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, 
 
 ## Reflection & conclusion
 
-Looking back at the <a href="/projects">projects</a> I contributed to, I am privileged, proud and humbled to be a part of this company. As the lone developer in a team of mainly designers, I feel valuable – which is incredibly heartwarming, as web development has been a passion for years now. Sure, I am still learning new things, but it is relieving to have all those late nights learning JavaScript and CSS pay off.
+Looking back at the <a href="/projects">projects</a> I contributed to, I am privileged, proud and humbled to be a part of this company. As the lone developer in a team of mainly designers, I feel valuable – which is incredibly heartwarming, as web development has been a passion for years now. Sure, I am still learning new things, but it is satisfying to have all those late nights learning JavaScript and CSS pay off.
 
 The experience of working here so far has been great, and while I certainly do make mistakes on a regular basis, I learn from it and adapt – and they let me, which I believe is beneficial for both parties.
 
 I have experienced great launch-events and undertaken small, medium and large-scale websites. I also had to explore the server-side aspect of the web, along with dynamic programming languages like PHP – both of which being fairly new to me. I hope to become more confident as time passes, but I will hopefully never slow down or stop learning new things.
 
-See all my <a href="/projects">projects</a> for Riktig Spor and <a href="/workflow-and-sketchbook">how I worked to get there</a>.
+See all my <a href="/projects">projects</a> for Riktig Spor and <a href="/workflow-and-sketchbook">how I worked on them</a>.
 
 <div class="div"></div>
 
