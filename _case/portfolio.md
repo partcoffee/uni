@@ -2,14 +2,14 @@
 layout: page
 case: true
 
-title: Behind the scenes
-headline: Behind the scenes
+title: Portfolio
+headline: Portfolio
 
 permalink: /portfolio/
 ---
 
 {::nomarkdown}
-<img src="../img/portfolio/img1.jpg" alt="Portfolio">
+<img src="../img/portfolio/img1.jpg" alt="Portfolio" class="fade wait">
 {:/}
 
 <div class="div"></div>
@@ -37,7 +37,7 @@ Echoing my thoughts from last year, I still find typography to be the most impor
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/portfolio/img2.png" alt="Proxima Nova">
+<img src="../img/portfolio/img2.png" alt="Proxima Nova typeface" class="entry">
 {:/}
 
 <div class="div"></div>

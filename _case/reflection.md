@@ -9,7 +9,7 @@ permalink: /reflection/
 ---
 
 {::nomarkdown}
-<img src="../img/reflection/cliff.jpg" alt="Mountainside">
+<img src="../img/reflection/cliff.jpg" alt="Mountainside" class="fade wait">
 {:/}
 
 <div class="div"></div>
@@ -37,42 +37,42 @@ From here, I'd like to further develop my workflow and pick up better practises 
 
 My workflow is not optimal just yet, but it is satisfactory for now, while I am the only developer on the team. This is something I intend to work on to secure a better future for new members of the team.
 
-From this semester I experienced the following technologies and languages
+From this semester I worked with the following technologies and languages
 
 <ul class="skill-list">
-	<li>HTML</li>
-	<li>HTML preprocessors</li>
-	<li>CSS</li>
-	<li>CSS preprocessors</li>
-	<li>CSS frameworks</li>
-	<li>JavaScript</li>
-	<li>JavaScript frameworks</li>
-	<li>Markdown</li>
-	<li>YAML data in Jekyll</li>
-	<li>Liquid templating</li>
-	<li>Git and version-control</li>
-	<li>Build tools (Gulp)</li>
-	<li>Static site generators</li>
-	<li>Content management systems (Wordpress)</li>
-	<li>PHP</li>
-	<li>Server- and domain configurations</li>
-	<li>SSH and safe uploading</li>
-	<li>SEO and social media integration</li>
-	<li>Web performance</li>
-	<li>Web accessibility</li>
+	<li class="entry">HTML</li>
+	<li class="entry">HTML preprocessors</li>
+	<li class="entry">CSS</li>
+	<li class="entry">CSS preprocessors</li>
+	<li class="entry">CSS frameworks</li>
+	<li class="entry">JavaScript</li>
+	<li class="entry">JavaScript frameworks</li>
+	<li class="entry">Markdown</li>
+	<li class="entry">YAML data in Jekyll</li>
+	<li class="entry">Liquid templating</li>
+	<li class="entry">Git and version-control</li>
+	<li class="entry">Build tools (Gulp)</li>
+	<li class="entry">Static site generators</li>
+	<li class="entry">Content management systems (Wordpress)</li>
+	<li class="entry">PHP</li>
+	<li class="entry">Server- and domain configurations</li>
+	<li class="entry">SSH and safe uploading</li>
+	<li class="entry">SEO and social media integration</li>
+	<li class="entry">Web performance</li>
+	<li class="entry">Web accessibility</li>
 </ul>
 
 and the software to manage it
 
 <ul class="skill-list">
-	<li>Photoshop</li>
-	<li>Illustrator</li>
-	<li>InDesign</li>
-	<li>Lightroom</li>
-	<li>Final Cut Pro</li>
-	<li>Sublime Text or other text-editors with Emmet</li>
-	<li>MAMP</li>
-	<li>Terminal (command line)</li>
+	<li class="entry">Photoshop</li>
+	<li class="entry">Illustrator</li>
+	<li class="entry">InDesign</li>
+	<li class="entry">Lightroom</li>
+	<li class="entry">Final Cut Pro</li>
+	<li class="entry">Sublime Text or other text-editors with Emmet</li>
+	<li class="entry">MAMP</li>
+	<li class="entry">Terminal (command line)</li>
 </ul>
 
 <div class="div"></div>

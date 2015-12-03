@@ -2,13 +2,13 @@
 layout: page
 case: true
 
-title: Projects &#124; Riktig Spor
-headline: Projects &#124; Riktig Spor
+title: Projects
+headline: Projects
 permalink: /projects/
 ---
 
 {::nomarkdown}
-<img src="../img/riktigspor/riktigspor1.jpg" alt="Mountains in Lofoten">
+<img src="../img/riktigspor/riktigspor1.jpg" alt="Mountains in Lofoten" class="fade wait">
 {:/}
 
 <div class="div"></div>

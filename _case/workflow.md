@@ -4,19 +4,19 @@ case: true
 slider: true
 scroll: true
 
-title: Workflow & sketchbook
-headline: Workflow & sketchbook
+title: Workflow & Sketchbook
+headline: Workflow & Sketchbook
 
 permalink: /workflow-and-sketchbook/
 ---
 
 {::nomarkdown}
-<img src="../img/workflow/workflow.jpg" alt="Workflow">
+<img src="../img/workflow/workflow.jpg" alt="Workflow" class="fade wait">
 {:/}
 
 <div class="div"></div>
 
-<p class="pull lead">To make this semester work, having the right priorities at the right time has been crucial. The majority of my time is spent working as a designer and web developer, pushing university assignments, research and deadlines to the afternoons and weekends. This worked surprisingly well in my opinion, and I could seamlessly tune in for important lectures over Skype – even at work.<span>Working five days a week, I had to use Skype to attend lectures across the ocean</span></p>
+<p class="pull lead">To make this semester work, having the right priorities at the right time has been crucial. The majority of my time is spent working as a designer and web developer, pushing university assignments, research and deadlines to the afternoons and weekends. This worked surprisingly well in my opinion, and I could seamlessly tune in for important lectures over Skype – even at work.<span>Jump to the <a class="scroll" href="#video">sketchbook video</a> to experience how I plan my work</span></p>
 
 Similarly to my previous semester, I follow a priority-list. The dissertation-module alone proposes 222 student-managed learning hours. With an additional 64 hours suggested for my portfolio workshop module, proper planning was essential. This was elevated by the fact that I didn't have students stressing out about deadlines around me – and thus peer pressure to do work was simply nonexistent. A strange experience, sure, but certainly affected my stress-levels.
 
@@ -98,7 +98,7 @@ Other keywords to look out for would be "møte", which is referring to meetings 
 
 ## How I work
 
-This has not changed much from my previous semester either, and the process is still very organic. The <a href="http://magnusskare.science/sketchbook/" target="_blank">articles I wrote on sketching</a> still applies to my workflow, but the process is now heavier on client feedback and understanding their needs. I still capture the majority of my thoughts in the form of text, lists or mind-maps – which is working quite well for me. You can gather a brief overview of how I sketch out my thoughts in the <a id="scroll" href="#video">sketchbook video</a>.
+This has not changed much from my previous semester either, and the process is still very organic. The <a href="http://magnusskare.science/sketchbook/" target="_blank">articles I wrote on sketching</a> still applies to my workflow, but the process is now heavier on client feedback and understanding their needs. I still capture the majority of my thoughts in the form of text, lists or mind-maps – which is working quite well for me. You can gather a brief overview of how I sketch out my thoughts in the <a class="scroll" href="#video">sketchbook video</a>.
 
 From there, it very much depends on the client and their needs. They may or may not request design as a part of the product, and if they do there is a whole process of research and mockups before we build anything. If they don't, we merely publish their content through a framework or established theme.
 
@@ -147,7 +147,7 @@ The web is famously claimed to be mostly typography, and I find a large amount o
 
 <div class="div"></div>
 
-I enjoy Scandinavian design, but also the work from outstanding individuals like Erik Spiekermann, Dieter Rams and Andrew Kim. They inspire me on a regular basis to not over-design things.
+I enjoy Scandinavian design and the work from outstanding individuals like Erik Spiekermann, Dieter Rams and Andrew Kim. They inspire me on a regular basis to not over-design things.
 
 I also think it's important to look outside the design industry for inspiration. Tobias van Schneider wrote a <a href="https://medium.com/@vanschneider/the-day-you-became-a-better-designer-68ee48e1c34c#.mk7lh663v" target="_blank">great article</a> on the topic, which essentially encourages us to not be trapped inside our comfort-zone.
 
@@ -162,14 +162,14 @@ I also think it's important to look outside the design industry for inspiration.
 Web design inspires web design, and I obviously find inspiration through the Internet. These are a few of my favourite sites for inspiration, along with a variey of Tumblr-blogs, Instagram accounts, design blogs and other websites:
 
 <ul class="skill-list">
-	<li><a href="http://squarespace.com/" target="_blank">Squarespace</a></li>
-	<li><a href="https://dribbble.com/" target="_blank">Dribbble</a></li>
-	<li><a href="http://www.siteinspire.com/" target="_blank">Siteinspire</a></li>
-	<li><a href="http://mindsparklemag.com/?websites" target="_blank">MindSparkle Magazine</a></li>
-	<li><a href="http://www.awwwards.com/" target="_blank">Awwwards</a></li>
-	<li><a href="http://fontsinuse.com/" target="_blank">Fonts In use</a></li>
-	<li><a href="http://designspiration.net/" target="_blank">Designspiration</a></li>
-	<li><a href="http://codepen.io/" target="_blank">Codepen</a></li>
+	<li class="entry"><a href="http://squarespace.com/" target="_blank">Squarespace</a></li>
+	<li class="entry"><a href="https://dribbble.com/" target="_blank">Dribbble</a></li>
+	<li class="entry"><a href="http://www.siteinspire.com/" target="_blank">Siteinspire</a></li>
+	<li class="entry"><a href="http://mindsparklemag.com/?websites" target="_blank">MindSparkle Magazine</a></li>
+	<li class="entry"><a href="http://www.awwwards.com/" target="_blank">Awwwards</a></li>
+	<li class="entry"><a href="http://fontsinuse.com/" target="_blank">Fonts In use</a></li>
+	<li class="entry"><a href="http://designspiration.net/" target="_blank">Designspiration</a></li>
+	<li class="entry"><a href="http://codepen.io/" target="_blank">Codepen</a></li>
 </ul>
 
 I appreciate simplicity over minimalism. We make things too complicated, and I believe simplcity is often ignored in favour of flashy features. Simplicity can also be translated into code. Code excellence isn't when there's nothing more we can add, but when there's nothing more we can remove. Ship honest and good products, make them maintainable and don't take shortcuts. These are high demands when the deadline is approaching, but I believe it is worth keeping in mind along the way.

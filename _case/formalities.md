@@ -9,7 +9,7 @@ permalink: /formalities/
 ---
 
 {::nomarkdown}
-<img src="../img/formalities/img1.jpg" alt="Desk">
+<img src="../img/formalities/img1.jpg" alt="Desk" class="fade wait">
 {:/}
 
 <!-- <div class="div"></div>
@@ -57,7 +57,7 @@ To clarify, I have been working for Riktig Spor as of September 1st, and tuning 
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/workflow/layout.jpg" alt="">
+<img src="../img/workflow/layout.jpg" alt="Print layout">
 {:/}
 
 <div class="div"></div>
@@ -65,14 +65,14 @@ To clarify, I have been working for Riktig Spor as of September 1st, and tuning 
 ## What I hope to improve upon
 
 <ul class="skill-list">
-	<li>Client management</li>
-	<li>Content management systems</li>
-	<li>Web development</li>
-	<li>Build systems</li>
-	<li>Design critiques</li>
-	<li>Photography</li>
-	<li>Project management</li>
-	<li>Business strategies and cost estimates</li>
+	<li class="entry">Client management</li>
+	<li class="entry">Content management systems</li>
+	<li class="entry">Web development</li>
+	<li class="entry">Build systems</li>
+	<li class="entry">Design critiques</li>
+	<li class="entry">Photography</li>
+	<li class="entry">Project management</li>
+	<li class="entry">Business strategies and cost estimates</li>
 </ul>
 
 <div class="div"></div>
@@ -94,6 +94,10 @@ I would also like to emphasise my deepest gratitude for the help and support thr
 **University of Winchester staff**, for their help to make this semester possible to complete from abroad.
 
 **Riktig Spor**, for their continued support, encouraging words and flexibility when it comes to my time spent studying.
+
+**Runar Johansen**, for his thoughts and input on my portfolio.
+
+**Family and friends**, for their support, kind words and input on my work.
 
 <div class="div"></div>
 

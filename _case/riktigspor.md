@@ -9,7 +9,7 @@ permalink: /riktigspor/
 ---
 
 {::nomarkdown}
-<img src="../img/riktigspor/logo.png" alt="Riktig Spor">
+<img src="../img/riktigspor/logo.png" alt="Riktig Spor" class="fade wait">
 {:/}
 
 <div class="div"></div>
@@ -51,7 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, 
 
 <div class="div"></div>
 
-<blockquote>
+<blockquote class="entry">
 	<p>Magnus has given us a crucial set of skills, previously lacking at Riktig Spor. His technical competence and understanding has lifted our web-based products and contributed to increased client satisfaction.</p>
 	<p>Jofrid, Senior Communication Advisor</p>
 </blockquote>
@@ -66,12 +66,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, 
 	<p>Cathrine, Senior Graphic Designer</p>
 </blockquote> -->
 
-<blockquote>
+<blockquote class="entry">
 	<p>Magnus is talented and professional &mdash; it's always a pleasure to ask him for help in Wordpress.</p>
 	<p>Marita, Senior Graphic Designer</p>
 </blockquote>
 
-<blockquote>
+<blockquote class="entry">
 	<p>Working with Magnus is a great pleasure. He is accurate, eloquent and efficient. He brings to us much needed technical know-how, and really fits in at Riktig Spor.</p>
 	<!-- Orginal -->
 	<!-- <p>Working with Magnus is a great pleasure. He is accurate, eloquent and efficient. He brings to us much needed technical know-how. Magnus is also a nice guy. He is clean, well behaved and, despite his some what freekish lunch habits, fits in at Riktig Spor.</p> -->
@@ -99,7 +99,7 @@ The experience of working here so far has been great, and while I certainly do m
 
 I have experienced great launch-events and undertaken small, medium and large-scale websites. I also had to explore the server-side aspect of the web, along with dynamic programming languages like PHP – both of which being fairly new to me. I hope to become more confident as time passes, but I will hopefully never slow down or stop learning new things.
 
-See all my <a href="/projects">projects</a> for Riktig Spor and <a href="/workflow-and-sketchbook">how I worked on them</a>.
+See all my <a href="/projects">projects</a> for Riktig Spor and <a href="/workflow-and-sketchbook">how I worked</a>.
 
 <div class="div"></div>
 

@@ -22,7 +22,7 @@
 <script src='{{ site.baseurl }}/js/main.js'></script>
 {% if page.slider %}<script src='{{ site.baseurl }}/js/slide.js' async ></script>{% endif %}
 {% if page.scroll %}<script>
-$('#scroll').click(function(e) {
+$('.scroll').click(function(e) {
 	e.preventDefault();
 	$('body, html').animate({
 		scrollTop: $($.attr(this, 'href')).offset().top -100
