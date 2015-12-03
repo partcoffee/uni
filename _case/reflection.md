@@ -103,6 +103,14 @@ Possible improvements include critical CSS, CDN and aggressive content-caching. 
 
 <div class="div"></div>
 
+## Checking boxes
+
+I believe I covered everything this semester.
+
+I included a <a href="/projects">a brief overview of the placement projects and outcomes</a>, with a general outline of <a href="/workflow-and-sketchbook">the process behind it and how I work</a>. The <a href="/workflow-and-sketchbook">workflow-section</a> should show evidence of research undertaking, with specific references to inspiration, books, websites and other publications – while also explaining as much of the process of idea to final outcome as possible.
+
+<div class="div"></div>
+
 ## Final thoughts
 
 I am eager to start my career in web development, and this has certainly given me a good start. Looking back, I am very pleased with my decision of working full-time and the uni/work arrangement agreed upon.

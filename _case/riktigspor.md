@@ -14,7 +14,7 @@ permalink: /riktigspor/
 
 <div class="div"></div>
 
-<p class="lead pull">For the past four months I have been working as a designer and web developer at Riktig Spor in Norway &mdash; and I hope to continue working here for my next semester. I work five days a week, covering a range of clients &mdash; from small websites to larger corporate ones. This article aims to cover the majority of these.<span>See all the <a href="/projects">projects</a> I contributed to</span></p>
+<p class="lead pull">For the past four months I have been working as a designer and web developer at Riktig Spor (roughly translates to "Right Path") in Norway &mdash; and I hope to continue working here for my next semester. I work five days a week, covering a range of clients &mdash; from small websites to larger corporate ones. This article aims to cover the majority of these.<span>See all the <a href="/projects">projects</a> I contributed to</span></p>
 
 As a general preface to this section, I should mention my responsibilities. I am admittedly still a student, and with that I am still learning &mdash; which is also the ultimate goal of this work placement. However, I am the primary web developer at this company, and thus I quickly took on the responsibility of hosting, developing and designing websites and web applications. I also cover photography at times, and the role of the web advisor for clients.
 

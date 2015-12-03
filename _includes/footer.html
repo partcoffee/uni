@@ -20,7 +20,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src='{{ site.baseurl }}/js/main.js'></script>
-{% if page.slider %}<script src='{{ site.baseurl }}/js/slide.js' async ></script>{% endif %}
+{% if page.slider %}
+<script src='{{ site.baseurl }}/js/slide.js' async ></script>{% endif %}
 {% if page.scroll %}<script>
 $('.scroll').click(function(e) {
 	e.preventDefault();
@@ -28,5 +29,6 @@ $('.scroll').click(function(e) {
 		scrollTop: $($.attr(this, 'href')).offset().top -100
 	}, 750);
 });
-</script>{% endif %}
+</script>
+{% endif %}
 {% include warning.html %}
