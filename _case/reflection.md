@@ -105,9 +105,15 @@ Possible improvements include critical CSS, CDN and aggressive content-caching. 
 
 ## Checking boxes
 
-I believe I covered everything this semester.
+I believe I covered everything this semester to the best of my abilities, given my situation and standing contracts.
 
 I included a <a href="/projects">a brief overview of the placement projects and outcomes</a>, with a general outline of <a href="/workflow-and-sketchbook">the process behind it and how I work</a>. The <a href="/workflow-and-sketchbook">workflow-section</a> should show evidence of research undertaking, with specific references to inspiration, books, websites and other publications – while also explaining as much of the process of idea to final outcome as possible.
+
+My project is <a href="https://github.com/partcoffee/uni" target="_blank">available on GitHub, with commented code</a> to show depth and purpose of every single line of code. As I mainly work with code, I this to be a case-study of its own. I also made <a href="vimeo.com/147452061" target="_blank">my sketchbook</a> available in HD to emphasise the process and initial stages of a project.
+
+The progression of ideas can mainly be seen in my <a href="/portfolio">portfolio case study</a>, as contracts prevent me from sharing too many details. However, I feel the <a href="/workflow-and-sketchbook/#development">development section of the workflow page</a> applies to the majority of my projects. The portfolio case study along with the <a href="/secondary">secondary work page</a> also outlines alternative approaches, and why they were or weren't chosen.
+
+Finally, key influeces and inspiration are both emphasised in my <a href="/workflow-and-sketchbook/#inspiration-and-design-research">workflow section</a>.
 
 <div class="div"></div>
 
