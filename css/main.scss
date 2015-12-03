@@ -180,6 +180,8 @@ ul, li {
 
 		/* I'm using pseudo-elements that exist in the "shadow-DOM" in order to use a single element for complex shapes. */
 		&:before {
+			/* Empty content-element as we do not need any text. It's not worth adding
+			anything here for search engines either, as the "shadow-DOM" is not visible to them */
 			content: '';
 			position: absolute;
 			width: 100px;
