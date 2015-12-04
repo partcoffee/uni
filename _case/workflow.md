@@ -126,9 +126,9 @@ I have yet to implement Git into my everyday projects, and still merely use it f
 
 ## Sketchbook
 
-As I couldn't physically submit my sketchbook, I had to submit it digitally – and as I had no time to scan my entire sketchbook, I made a short video instead. The notes are in Norwegian, and you should probably pause at times for a closer look. The video ends with the notes for the video itself and a picture of how it was shot, which I thought was a clever touch.
+As I couldn't physically submit my sketchbook, I had to submit it digitally – and as I had no time to scan my entire sketchbook, I made a short video instead. I'm bilingual, but the notes are primarily in Norwegian. The video ends with the notes for the video itself and a picture of how it was shot, which I thought was a clever touch.
 
-I would highly recommend <a href="https://vimeo.com/147452061" target="_blank">watching it in HD</a>, as embded videos will only be SD.
+I would highly recommend <a href="https://vimeo.com/147452061" target="_blank">watching it in HD</a> for a closer look and the ability to actually read the notes, as embded videos will only be SD.
 
 <div class="div"></div>
 
