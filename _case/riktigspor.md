@@ -39,9 +39,15 @@ I believe I quickly adapted to this technology, and today I am developing Wordpr
 
 ## Words from the general manager
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iusto possimus, consectetur ipsam deserunt voluptatibus maiores necessitatibus exercitationem doloribus architecto vitae quo voluptatem nulla tenetur consequatur id fugiat, sequi laudantium nostrum debitis hic veritatis, ipsa a! Suscipit beatae tenetur odio facilis, libero ad vitae labore perspiciatis expedita error dolor blanditiis?
+As of September 2015, Magnus Skare has been employed as a full-time web designer at Riktig Spor. In his time here I have had the opportunity to see Magnus develop as a web designer and taking on new challenges. He has learned the operating procedures at Riktig Spor and accomplished all tasks in a timely manner.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et deleniti, amet perferendis, eaque temporibus officia tenetur quidem ducimus provident perspiciatis assumenda repellendus accusantium neque sint accusamus eos pariatur inventore.
+Magnus has worked on several different cases. For certain cases he has participated as a team member and consultant for web related projects, while acting as the project manager for clients requesting new websites on other projects. He delivers on time, and pushes for development in the cases where he needs to.
+
+Magnus is highly regarded for his web competence and skills. His expertise as a web consultant is developing, and his ability to communicate the intricacies of the web to “non-web-inhabitants” is improving.
+
+We are very pleased with Magnus´ demeanor towards clients as well as co-workers. He is an asset to our agency, and we appreciate his work. At the moment Magnus is on a short-term contract, which we plan to renew for us to have him here for his next term also, while he finishes his studies. We have hopes that Magnus will be a long-term employee at Riktig Spor, and that we can have him in charge of our web focus in the future.
+
+– Brita Bjørnbakk
 
 <div class="div"></div>
 
