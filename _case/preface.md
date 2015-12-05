@@ -2,10 +2,10 @@
 layout: page
 case: true
 
-title: Formalities
-headline: Formalities
+title: Preface
+headline: Preface
 
-permalink: /formalities/
+permalink: /preface/
 ---
 
 {::nomarkdown}
@@ -31,7 +31,7 @@ permalink: /formalities/
 
 <div class="div"></div>
 
-## Preface
+## Formalities
 
 <p class="pull">
 	As a preface to this semester, I'd like to mention my <a href="http://magnusskare.science/uni/" target="_blank">previous portfolio</a>. While I believe it did manage to showcase my work in a professional manner, I have to agree with the feedback I received &mdash; it was impenetrable. The sheer volume of work came across as overwhelming, mainly due to my subjective fear of seeming shallow. I wanted to show depth, but completely disregarded the end user (you) in the process.
@@ -44,7 +44,7 @@ Please <a href="https://github.com/partcoffee/uni" target="_blank">explore the G
 
 You can also reference <a href="https://vimeo.com/147452061" target="_blank">my sketchbook</a> at any given time.
 
-Download my <a href="#">NLT document</a> and <a target="_blank" href="../img/formalities/cv.pdf">live CV</a>.
+Download my <a href="#">NLT document</a>, <a target="_blank" href="../img/formalities/cv.pdf">live CV</a> and <a href="#">professional portfolio</a>.
 
 <div class="div"></div>
 

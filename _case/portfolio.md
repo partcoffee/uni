@@ -87,11 +87,14 @@ The source-code is <a href="https://github.com/partcoffee/uni" target="_blank">a
 
 <p class="pull">This site was certainly not the plan all along, and I did have several different approaches in mind. I have been experimenting with cover-pages, one-page layouts and similar design propositions to this one. However, subjectively and based on colleague feedback, this seemed to be the best approach to highlight all my work in a structured and efficient manner. The blank canvas should give each project the attention it deserves, while simutanously giving me the freedom to be as brief or as thorough as I have to.<span>The <a href="/workflow-and-sketchbook">workflow & sketchbook</a>-section highlights how I work</span></p>
 
+An outside point of view was crucial for the process, as looking at the same homepage layout every day can get tedious and boring – tempting me to change the layout or colours based solely on boredom. A specific example was the use of solid colours over images, illustrated in the screenshot below, but the feedback for images was overwhelmingly posivitive in comparison.
+
 I have included some different approaches as screenshots, but live examples are available upon request. You can see more examples under <a href="/secondary">secondary work</a>. These are all fully responsive and should function well in all modern browsers.
 
 <div class="div"></div>
 
 {::nomarkdown}
+<img src="../img/portfolio/colour.png" alt="Previous portfolio version" class="free-height browser">
 <img src="../img/portfolio/5.png" alt="Previous portfolio version">
 <img src="../img/portfolio/6.png" alt="Previous portfolio version">
 <!-- <img class="browser" src="../img/portfolio/1.png" alt="Previous portfolio version"> -->

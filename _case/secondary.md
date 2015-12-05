@@ -139,6 +139,7 @@ I feel like I should include everything in this portfolio, but these projects we
 <img src="../img/secondary/per3.png" alt="Personal portfolio process">
 <img src="../img/secondary/per4.png" alt="Personal portfolio process">
 <img src="../img/secondary/per6.png" alt="Personal portfolio process">
+<img src="../img/secondary/colour.png" class="browser tall" alt="Previous portfolio version">
 <img src="../img/secondary/per5.png" class="browser" alt="Personal portfolio process">
 {:/}
 

@@ -513,6 +513,10 @@ ul, li {
 	}
 }
 
+.free-height {
+	max-height: none !important;
+}
+
 /* Makes images sit tighter in a "gallery" if nested inside any element with the together-class */
 .together {
 	img {

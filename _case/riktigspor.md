@@ -47,7 +47,7 @@ Magnus is highly regarded for his web competence and skills. His expertise as a 
 
 We are very pleased with Magnus´ demeanor towards clients as well as co-workers. He is an asset to our agency, and we appreciate his work. At the moment Magnus is on a short-term contract, which we plan to renew for us to have him here for his next term also, while he finishes his studies. We have hopes that Magnus will be a long-term employee at Riktig Spor, and that we can have him in charge of our web focus in the future.
 
-– Brita Bjørnbakk
+– Brita Bjørnbakk, General Manager
 
 <div class="div"></div>
 
