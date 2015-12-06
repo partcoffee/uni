@@ -1,28 +1,33 @@
 <footer class="footer{% if page.case %}{% else %} footer-home{% endif %}">
 	<ul class="footer-list">
 		<li class="footer-links">
-			<a href="https://twitter.com/MagnusSkare">Twitter</a>
+			<a href="https://twitter.com/MagnusSkare" target="_blank">Twitter</a>
 		</li>
 		<li class="footer-links">
-			<a href="https://dribbble.com/PartCoffee/">Dribbble</a>
+			<a href="https://dribbble.com/PartCoffee/" target="_blank">Dribbble</a>
 		</li>
 		<li class="footer-links">
-			<a href="https://github.com/partcoffee/">GithHub</a>
+			<a href="https://github.com/partcoffee/" target="_blank">GithHub</a>
 		</li>
 		<li class="footer-links">
-			<a href="https://instagram.com/magnusskare/">Instagram</a>
+			<a href="https://instagram.com/magnusskare/" target="_blank">Instagram</a>
 		</li>
 		<li class="footer-links">
-			<a href="/">Powered by coffee and love</a>
+			<a href="https://github.com/partcoffee/uni/" target="_blank">Powered by coffee and love</a>
 		</li>
 	</ul>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 <script src='{{ site.baseurl }}/js/main.js'></script>
+
 {% if page.slider %}
 <script src='{{ site.baseurl }}/js/slide.js' async ></script>{% endif %}
-{% if page.scroll %}<script>
+{% if page.scroll %}
+
+<!-- Conditional logic to add a "scroll-to" animation on pages where it's needed -->
+<script>
 $('.scroll').click(function(e) {
 	e.preventDefault();
 	$('body, html').animate({
@@ -31,4 +36,6 @@ $('.scroll').click(function(e) {
 });
 </script>
 {% endif %}
+
+<!-- Adds a warning-message for IE9 and below to encourage the user of modern browsers -->
 {% include warning.html %}

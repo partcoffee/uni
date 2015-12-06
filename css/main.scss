@@ -205,7 +205,8 @@ ul, li {
 			top: 0;
 			width: 64px;
 		}
-
+		
+		/* Focus and hover defined to support keyboard only and mouse only input */
 		&:hover, &:focus {
 			margin-left: 80px;
 			outline: 0;
