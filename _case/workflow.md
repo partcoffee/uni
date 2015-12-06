@@ -11,7 +11,7 @@ permalink: /workflow-and-sketchbook/
 ---
 
 {::nomarkdown}
-<img src="../img/workflow/workflow.jpg" alt="Workflow" class="fade wait">
+<img src="../img/workflow/hero.jpg" alt="Workflow" class="fade wait">
 {:/}
 
 <div class="div"></div>
@@ -142,7 +142,7 @@ The web is famously claimed to be mostly typography, and I find a large amount o
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/workflow/type.jpg" alt="Bilde av bøker">
+<img src="../img/workflow/workflow.jpg" alt="Workflow">
 {:/}
 
 <div class="div"></div>
@@ -154,7 +154,7 @@ I also think it's important to look outside the design industry for inspiration.
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/workflow/layout.jpg" alt="Bilde av bøker">
+<img src="../img/workflow/layout.jpg" alt="Workflow">
 {:/}
 
 <div class="div"></div>
