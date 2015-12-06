@@ -23,7 +23,7 @@ My <a href="http://magnusskare.science/uni/" target="_blank">second university p
 <div class="div"></div>
 
 {::nomarkdown}
-<img class="browser" src="../img/portfolio/show.png" alt="Current portfolio version">
+<img class="browser tall" src="../img/portfolio/show.png" alt="Current portfolio version">
 {:/}
 
 <div class="div"></div>
