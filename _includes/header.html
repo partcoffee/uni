@@ -27,9 +27,9 @@
 	</a>
 </header>
 {% else %}
-<header class="header">
+<header class="header{% if page.home == true %} home-header{% endif %}">
 	<!-- <h1 class="header-text up">Web designer &amp; developer based in Norway.</h1> -->
-	<h1 class="header-text up">The open road still softly calls, like a nearly forgotten song of childhood.</h1>
+	<h1 class="header-text up">The open road still softly calls &mdash; like a nearly forgotten song of childhood.</h1>
 	<!-- <h2 class="header-subtext up wait">– Carl Sagan</h2> -->
 	<!-- <h1 class="header-text home-text up"><span>Magnus Skare</span>, designer and web developer based in Northern Norway.</h1> -->
 	{% for post in site.posts limit:1 %}

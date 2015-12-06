@@ -252,7 +252,30 @@ ul, li {
 	.button {
 		margin-top: 10px;
 	}
+}
 
+.home-header {
+	width: 100%;
+	margin: 0 auto;
+	max-width: ($break * 1.2);
+	text-align: center;
+
+	.header-text {
+		margin: 8% auto 6%;
+		font-size: 24px;
+
+		@media (min-width: ($break * 1.2)) {
+			font-size: 32px;
+		}
+	}
+
+	@media (min-width: ($total * 1.5)) {
+		max-width: ($break * 1.5);
+
+		.header-text {
+			font-size: 40px;
+		}
+	}
 }
 
 .header-text {
