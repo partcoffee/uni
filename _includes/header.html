@@ -1,16 +1,6 @@
 {% include nav.html %}
 
-{% if page.journal == true %}
-<header class="header">
-	<h1 class="header-text up">{{ page.headline }}</h1>
-	<h2 class="header-subtext up wait">{% if page.subtitle %}{{ page.subtitle }}{% else %}{% include words.html %} read{% endif %}</h2>
-</header>
-{% elsif page.case == true %}
-<header class="page-header">
-	<h1 class="page-header-text up">{{ page.headline }}</h1>
-	<h2 class="page-header-subtext up wait">{% if page.subtitle %}{{ page.subtitle }}{% else %}{% include words.html %} read{% endif %}</h2>
-</header>
-{% elsif page.article == true %}
+{% if page.case == true %}
 <header class="page-header">
 	<h1 class="page-header-text up">{{ page.headline }}</h1>
 	<h2 class="page-header-subtext up wait">{% if page.subtitle %}{{ page.subtitle }}{% else %}{% include words.html %} read{% endif %}</h2>
