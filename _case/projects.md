@@ -29,7 +29,7 @@ You can find the <a href="http://riktigspor.no" target="_blank">live site here</
 
 {::nomarkdown}
 <img src="../img/riktigspor/lofoten2.jpg" alt="Mountains in Lofoten">
-<!-- <img src="../img/riktigspor/lofoten3.jpg" alt="Lofoten Link brand material"> -->
+<img src="../img/riktigspor/lofoten1.jpg" alt="Lofoten Link brand material">
 {:/}
 
 <div class="div"></div>
