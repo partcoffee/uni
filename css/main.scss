@@ -499,6 +499,10 @@ ul, li {
 
 	&:last-of-type {
 		display: block;
+
+		a {
+			display: inline-block
+		}
 	}
 }
 
