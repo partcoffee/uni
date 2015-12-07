@@ -31,7 +31,7 @@ I believe I quickly adapted to this technology, and today I am developing Wordpr
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/riktigspor/business-card.jpg" alt="Riktig Spor business card">
+<img src="../img/riktigspor/space.jpg" alt="Riktig Spor">
 {:/}
 
 
@@ -52,7 +52,7 @@ We are very pleased with Magnus´ demeanor towards clients as well as co-workers
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/riktigspor/riktigspor.jpg" alt="Riktig Spor">
+<img src="../img/riktigspor/space2.jpg" alt="Riktig Spor">
 {:/}
 
 <div class="div"></div>
@@ -92,7 +92,7 @@ We are very pleased with Magnus´ demeanor towards clients as well as co-workers
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/riktigspor/people.jpg" alt="Riktig Spor in the audience">
+<img src="../img/riktigspor/view.jpg" alt="Riktig Spor in the audience">
 {:/}
 
 <div class="div"></div>

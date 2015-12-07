@@ -28,8 +28,14 @@ You can find the <a href="http://riktigspor.no" target="_blank">live site here</
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/riktigspor/lofoten2.jpg" alt="Mountains in Lofoten">
-<img src="../img/riktigspor/lofoten1.jpg" alt="Lofoten Link brand material">
+<div class="grid">
+	<div class="col-100 full-width">
+		<img src="../img/riktigspor/lofoten2.jpg" alt="Mountains in Lofoten">
+	</div>
+	<div class="col-100 full-width">
+		<img src="../img/riktigspor/lofoten1.jpg" alt="Lofoten Link brand material">
+	</div>
+</div>
 {:/}
 
 <div class="div"></div>
