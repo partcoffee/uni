@@ -121,6 +121,15 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 
 			&:nth-of-type(5) {
 				padding-right: 0;
+
+				/* Super custom "magic number" values. I do not encourage this at all, but for our specific use-case,
+				where we know how everything is going to look, what images we're using, and that we know, for a fact,
+				that the image in question is a solid colour, we can let it slide. MUST be changed if we change the image. */
+				@media (min-width: 1500px) {
+					img {
+						height: 394px;
+					}
+				}
 			}
 
 			&:nth-of-type(6) {
