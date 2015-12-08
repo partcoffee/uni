@@ -134,13 +134,15 @@ I feel like I should include everything in this portfolio, but these projects we
 <img src="../img/secondary/wp-2.png" class="tall" alt="Wordpress tempalte">
 <img src="../img/secondary/wp-3.png" class="tall" alt="Wordpress tempalte">
 <img src="../img/secondary/teaser.png" class="tall" alt="Wordpress tempalte">
+<img src="../img/secondary/per7.jpg" class="tall browser" alt="Wordpress tempalte">
+<!-- <img src="../img/secondary/per8.jpg" class="browser" alt="Wordpress tempalte"> -->
 <img src="../img/secondary/wp-4.jpg" alt="Wordpress tempalte">
 <!-- <img src="../img/secondary/glea-web.png" class="tall" alt="Wordpress tempalte"> -->
 {:/}
 
 <div class="div"></div>
 
-> The above is a self-developed Wordpress theme in its early stages. It was further developed to serve client websites like <a href="http://glea.no" target="_blank">Glea</a> and more.
+> The above is a self-developed Wordpress theme in its early stages. It was further developed to serve client websites like <a href="http://glea.no" target="_blank">Glea</a> and more (in progress).
 
 <div class="div"></div>
 
