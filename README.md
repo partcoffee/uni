@@ -2,14 +2,9 @@
 
 This is my university portfolio for Q3/Q4 of 2015. The site is built from scratch with Jekyll for speed and performance.
 
-## Folders of interest:
+For more information on Jekyll, I'd encourage reading their documentation, but the essence of it is a really good static site generator – saving me and other developers hours of work.
 
-* **_sass** and **css** for commented CSS (Sass) code
-* **_case** for articles
-* **_data** for the source of the homepage data
-* **js** for commented JavaScript code
-
-## Explaining folder content
+## Folders explained
 
 * **_case** contains case studies
 * **_data** contains data for loops for easy maintainability
@@ -20,3 +15,10 @@ This is my university portfolio for Q3/Q4 of 2015. The site is built from scratc
 * **css** contains our main Sass-file
 * **img** contains images and subfolders for every page
 * **js** contains our JavaScript files
+
+## For marking: Folders of interest:
+
+* **_sass** and **css** for commented CSS (Sass) code
+* **_case** for articles
+* **_data** for the source of the homepage data
+* **js** for commented JavaScript code
