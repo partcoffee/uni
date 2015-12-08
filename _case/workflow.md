@@ -154,7 +154,7 @@ I also think it's important to look outside the design industry for inspiration.
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/workflow/layout.jpg" alt="Workflow">
+<img src="../img/workflow/paint.jpg" alt="Working">
 {:/}
 
 <div class="div"></div>
