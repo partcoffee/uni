@@ -1,5 +1,7 @@
 # Uni portfolio
 
+This is my university portfolio for Q3/Q4 of 2015. The site is built from scratch with Jekyll for speed and performance.
+
 ## Folders of interest:
 
 * **_sass** and **css** for commented CSS (Sass) code
