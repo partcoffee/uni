@@ -16,7 +16,7 @@ For more information on Jekyll, I'd encourage reading their documentation, but t
 * **img** contains images and subfolders for every page
 * **js** contains our JavaScript files
 
-## For marking: Folders of interest:
+## For marking
 
 * **_sass** and **css** for commented CSS (Sass) code
 * **_case** for articles
