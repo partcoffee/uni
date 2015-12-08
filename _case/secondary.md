@@ -42,7 +42,7 @@ I feel like I should include everything in this portfolio, but these projects we
 
 <div class="div"></div>
 
-> Secret project
+> Secret project (NDA)
 
 <div class="div"></div>
 
@@ -53,8 +53,17 @@ I feel like I should include everything in this portfolio, but these projects we
 
 <div class="div"></div>
 
-> Rejected proposal for a calendar design direction
+> Rejected proposal for a calendar design art direction
 
+<div class="div"></div>
+
+{::nomarkdown}
+<img src="../img/secondary/check.png" alt="Accessibility checklist">
+{:/}
+
+<div class="div"></div>
+
+> Accessibility checklist project for websites, translated into "human language" from the WCAG 2.0 documentation
 
 <div class="div"></div>
 
@@ -123,6 +132,7 @@ I feel like I should include everything in this portfolio, but these projects we
 {::nomarkdown}
 <img src="../img/secondary/wp-1.png" class="tall" alt="Wordpress tempalte">
 <img src="../img/secondary/wp-2.png" class="tall" alt="Wordpress tempalte">
+<img src="../img/secondary/wp-3.png" class="tall" alt="Wordpress tempalte">
 <img src="../img/secondary/teaser.png" class="tall" alt="Wordpress tempalte">
 <img src="../img/secondary/wp-4.jpg" alt="Wordpress tempalte">
 <!-- <img src="../img/secondary/glea-web.png" class="tall" alt="Wordpress tempalte"> -->
@@ -137,6 +147,7 @@ I feel like I should include everything in this portfolio, but these projects we
 {::nomarkdown}
 <img src="../img/secondary/per1.png" class="browser" alt="Personal portfolio process">
 <img src="../img/secondary/per3.png" alt="Personal portfolio process">
+<img src="../img/secondary/per7.png" alt="Personal portfolio process">
 <img src="../img/secondary/per4.png" alt="Personal portfolio process">
 <img src="../img/secondary/per6.png" alt="Personal portfolio process">
 <img src="../img/secondary/colour.png" class="browser tall" alt="Previous portfolio version">

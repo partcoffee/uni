@@ -60,7 +60,7 @@ The site offers roughly 60-80 characters per line, presenting a comfortable read
 
 Jekyll is a static site generator and will serve static HTML-files for the end user. The site is generated locally, so we can still benefit from PHP-like includes for our footer and header &mdash; this means we avoid the pain of writing static HTML over and over again. It also makes updates easier.
 
-Everything else goes without saying, but should be mentioned anyway: asset compression (JS, CSS, HTML), image compression, limit HTTP requests and third party resources. This should leave us within a reasonable performance-budget of 2 second load time on our initial request and >.5 seconds on second load.
+Everything else we do for performance reasons goes without saying, but should be mentioned anyway: asset compression (JS, CSS, HTML), image compression, limit HTTP requests and third party resources. This should leave us within a reasonable performance-budget of >2.0 second load time on our initial request and >.5 seconds on second load.
 
 <div class="div"></div>
 
@@ -72,11 +72,11 @@ Everything else goes without saying, but should be mentioned anyway: asset compr
 
 ## Maintainability & technology
 
-<p class="pull">Without getting too technical, I can mention that the site is not very client-friendly. <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> in itself runs on Ruby, which is installed via Node and NPM. That's already a bit too much for most clients.<span>View the code behind this site on <a href="https://github.com/partcoffee/uni" target="_blank">GitHub</a></span></p>
+<p class="pull">Without getting too technical, I can mention that the site is not very client-friendly. <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> in itself runs on Ruby, which I installed via Node and NPM. That's already a bit too much for most clients.<span>View the code behind this site on <a href="https://github.com/partcoffee/uni" target="_blank">GitHub</a></span></p>
 
-However, this is not a client website, and the lack of a content management system gives me more control as a developer. All my content is written in Markdown, which is a simple language and saves you hours of work in the long run, compared to writing HTML.
+However, this is not a client website, and the absence of a content management system gives me more control as a developer. All my content is written in Markdown, which is a simple language and saves you hours of work in the long run, compared to writing HTML.
 
-I have made my life easier by listing projects in a data-folder, where a loop can access it and generate our homepage. I still code in <a href="http://sass-lang.com/" target="_blank">Sass</a> to benefit from variables and functions in CSS, but I moved on to <a href="http://gulpjs.com/" target="_blank">Gulp</a> to speed up my workflow. However, GitHub Pages will only support a naked Jekyll build, and thus this site may have been generated with the default generator.
+I have made my life easier by listing <a href="https://github.com/partcoffee/uni/blob/master/_data/projects.yml" target="_blank">projects</a> in a data-folder, where a loop can access it and generate our homepage. I still code in <a href="http://sass-lang.com/" target="_blank">Sass</a> to benefit from variables and functions in CSS, but I moved on to <a href="http://gulpjs.com/" target="_blank">Gulp</a> to speed up my workflow. However, GitHub Pages will only support a naked Jekyll build, and thus this site may have been generated with the default generator.
 
 The source-code is <a href="https://github.com/partcoffee/uni" target="_blank">available on GitHub</a>, which will show the raw files I work with. You can also see how the code works in the <a href="https://github.com/partcoffee/uni/blob/master/css/main.scss" target="_blank">main scss-file</a>, which extends to all the <a href="https://github.com/partcoffee/uni/tree/master/_sass" target="_blank">included scss-files</a> and <a href="https://github.com/partcoffee/uni/blob/master/js/main.js" target="_blank">main JavaScript file</a>. If you are a developer, I strongly encourage you to clone to repo or read through it on GitHub. This gives me the option to refer to specific code samples and annotate them accordingly to satisfy the assessment sheet.
 

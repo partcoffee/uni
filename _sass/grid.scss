@@ -151,6 +151,12 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 	margin: 0;
 	font: 300 18px/1 $primary;
 
+	span {
+		display: block;
+		font-size: 50%;
+		margin-top: .5em;
+	}
+
 	@media (min-width: $break) {
 		font-size: 22px;
 		bottom: ($margins * 1.2);

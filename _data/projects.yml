@@ -1,27 +1,34 @@
 - name: Preface
   image: /img/show/b.jpg
   link: /preface/
+  time: 5
 
 - name: Riktig Spor
   image: /img/show/a.jpg
   link: /riktigspor/
+  time: 5
 
 - name: Riktig Spor Projects
   image: /img/show/stack.png
   link: /projects/
+  time: 7
 
 - name: Workflow & Sketchbook
   image: /img/show/workflow.jpg
   link: /workflow-and-sketchbook/
+  time: 8
 
 - name: Secondary Work
   image: /img/show/stack.png
   link: /secondary/
+  time: 3
 
 - name: Portfolio
   image: /img/show/stack.png
   link: /portfolio/
+  time: 6
 
 - name: Reflection
   image: /img/show/stack.png
   link: /reflection/
+  time: 5
