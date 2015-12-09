@@ -72,9 +72,9 @@ Everything else we do for performance reasons goes without saying, but should be
 
 ## Server configurations
 
-<p class="pull">Server configurations also play a significant role in page speed and performance, and while this is largely a system admin role (and not a front-end developer role), I felt it was needed in order to get the site to where it should be – performance-wise. I use DigitalOcean to host my univeristy portfolio, which is a cloud-based SSD server. This is already faster than most shared hosting-providers.<span><a href="http://www.webpagetest.org/result/151209_2M_QEX/" target="_blank">WebPagetest</a> shows a positive result on performance, but there is still room for improvement</span></p>
+<p class="pull">Server configurations also play a significant role in page speed and performance, and while this is largely a system admin role (and not a front-end developer role), I felt it was needed in order to get the site to where it should be – performance-wise. I use DigitalOcean to host my univeristy portfolio, which is a cloud-based SSD server. This is already faster than most shared hosting-providers.<span><a href="http://www.webpagetest.org/result/151209_MZ_RA5/" target="_blank">WebPagetest</a> shows a positive result on performance, but there is still room for improvement</span></p>
 
-The server was then configured to support gzipping (compressed transfer), static contentn caching (to avoid redownloading content) and effectively serve cotnent faster. As CloudOcean is cloud-based, this is achieved through SSH on a cloud-based Linux operating system. The site is tested through <a href="http://www.webpagetest.org/result/151209_B4_PZ1/" target="_blank">WebPagetest</a>, and definitely stays within our performance budget.
+The server was then configured to support gzipping (compressed transfer), static contentn caching (to avoid redownloading content) and effectively serve cotnent faster. As CloudOcean is cloud-based, this is achieved through SSH on a cloud-based Linux operating system. The site is tested through <a href="http://www.webpagetest.org/result/151209_MZ_RA5/" target="_blank">WebPagetest</a>, and definitely stays within our performance budget.
 
 <div class="div"></div>
 
