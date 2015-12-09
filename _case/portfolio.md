@@ -60,7 +60,21 @@ The site offers roughly 60-80 characters per line, presenting a comfortable read
 
 Jekyll is a static site generator and will serve static HTML-files for the end user. The site is generated locally, so we can still benefit from PHP-like includes for our footer and header &mdash; this means we avoid the pain of writing static HTML over and over again. It also makes updates easier.
 
-Everything else we do for performance reasons goes without saying, but should be mentioned anyway: asset compression (JS, CSS, HTML), image compression, limit HTTP requests and third party resources. This should leave us within a reasonable performance-budget of >2.0 second load time on our initial request and >.5 seconds on second load.
+Everything else we do for performance reasons goes without saying, but should be mentioned anyway: asset compression (JS, CSS, HTML), image compression, limit HTTP requests and third party resources. This should leave us within a reasonable performance-budget of >1.4 seconds load time on our initial request and >1 second on repeat load.
+
+<div class="div"></div>
+
+{::nomarkdown}
+<img src="../img/portfolio/text.png" class="browser" alt="Article layout">
+{:/}
+
+<div class="div"></div>
+
+## Server configurations
+
+<p class="pull">Server configurations also play a significant role in page speed and performance, and while this is largely a system admin role (and not a front-end developer role), I felt it was needed in order to get the site to where it should be – performance-wise. I use DigitalOcean to host my univeristy portfolio, which is a cloud-based SSD server. This is already faster than most shared hosting-providers.<span><a href="http://www.webpagetest.org/result/151209_2M_QEX/" target="_blank">WebPagetest</a> shows a positive result on performance, but there is still room for improvement</span></p>
+
+The server was then configured to support gzipping (compressed transfer), static contentn caching (to avoid redownloading content) and effectively serve cotnent faster. As CloudOcean is cloud-based, this is achieved through SSH on a cloud-based Linux operating system. The site is tested through <a href="http://www.webpagetest.org/result/151209_2M_QEX/" target="_blank">WebPagetest</a>, and definitely stays within our performance budget.
 
 <div class="div"></div>
 

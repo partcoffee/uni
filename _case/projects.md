@@ -93,7 +93,7 @@ You can see the <a href="http://mkk.acc/" target="_blank">live website here</a>.
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/riktigspor/svenn.png" alt="Svenns Transport">
+<img src="../img/riktigspor/svenn.jpg" alt="Svenns Transport">
 {:/}
 
 <div class="div"></div>
@@ -104,7 +104,7 @@ Svenn's Transport focuses on transportation and delivery of wares and goods. Rik
 
 From this I learned how this company values its craft, and how quality should be associated with their name. I learned how to navigate and use Wordpress effectively, and how to move Wordpress sites from one domain & server to another.
 
-The website should be <a href="http://134.90.150.116/~svenn/" target="_blank">live</a>, but we are in the process of moving it, so the link might return a 404 error
+The website should be <a href="http://134.90.150.116/~svenn/" target="_blank">live on a temporary development server</a>, but we are in the process of moving it, so the link might return a 404 error – feel free to contact me if you can't open the link.
 
 <div class="div"></div>
 

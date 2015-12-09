@@ -9,7 +9,7 @@ permalink: /preface/
 ---
 
 {::nomarkdown}
-<img src="../img/formalities/img1.jpg" alt="Desk" class="fade wait">
+<img src="../img/formalities/desk.jpg" alt="Desk" class="fade wait">
 {:/}
 
 <!-- <div class="div"></div>
@@ -57,7 +57,7 @@ To clarify, I have been working for Riktig Spor as of September 1st, and tuning 
 <div class="div"></div>
 
 {::nomarkdown}
-<img src="../img/workflow/layout.jpg" alt="Print layout">
+<img src="../img/formalities/img1.jpg" alt="Desk">
 {:/}
 
 <div class="div"></div>
