@@ -44,7 +44,7 @@ Please <a href="https://github.com/partcoffee/uni" target="_blank">explore the G
 
 You can also reference <a href="https://vimeo.com/147452061" target="_blank">my sketchbook</a> at any given time.
 
-Download my <a href="#">NLT document</a>, <a target="_blank" href="../img/formalities/cv.pdf">live CV</a> and <a target="_blank" href="../img/formalities/professional-compressed-for-web.pdf">professional portfolio</a>.
+Download my <a href="../img/formalities/Y3S1-NLT-Updated-MagnusSkare.doc">updated NLT document</a>, <a target="_blank" href="../img/formalities/cv.pdf">live CV</a> and <a target="_blank" href="../img/formalities/professional-compressed-for-web.pdf">professional portfolio</a>.
 
 <div class="div"></div>
 
