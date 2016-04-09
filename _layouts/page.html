@@ -8,7 +8,7 @@ layout: default
 	{% if page.journal == true %}
 	{% else %}
 	<p class="mid">
-		<a href="/" class="button shift">
+		<a href="{% if page.final == true %}/final{% else %}/{% endif %}" class="button shift">
 		<svg class="icon icon-chevron-thin-left">
 			<use xlink:href="#icon-chevron-thin-left"></use>
 		</svg>

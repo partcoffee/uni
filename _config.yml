@@ -11,7 +11,7 @@ sass:
 
 # Build settings
 markdown: kramdown
-include: [_case]
+include: ['_case', '_page']
 
 # Time zone
 timezone: Europe/London

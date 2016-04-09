@@ -119,7 +119,7 @@ I have yet to implement Git into my everyday projects, and still merely use it f
 <div class="div"></div>
 
 <div class="article-video" id="video">
-	<iframe src="https://player.vimeo.com/video/147452061?color=fff&amp;title=0&amp;byline=0&amp;portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/147452061">Sketchbook</a> from <a href="https://vimeo.com/saphiralol">Magnus Skare</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+	<iframe src="https://player.vimeo.com/video/147452061?color=fff&amp;title=0&amp;byline=0&amp;portrait=0" width="1280" height="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/147452061">Sketchbook</a> from <a href="https://vimeo.com/saphiralol">Magnus Skare</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </div>
 
 <div class="div"></div>

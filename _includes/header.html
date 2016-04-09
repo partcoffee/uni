@@ -17,8 +17,8 @@
 	</a>
 </header>
 {% else %}
-<header class="header{% if page.home == true %} home-header{% endif %}">
-	<h1 class="header-text up">The open road still softly calls &mdash; like a nearly forgotten song of childhood.</h1>
+<header class="header{% if page.home == true %} home-header{% endif %}{% if page.final == true %} header-final{% endif %}">
+	<h1 class="header-text up">{% if page.final == true %}Inspired by Scandinavia and modern Japanese design, I craft light and honest experiences on the web.{% else %}The open road still softly calls — like a nearly forgotten song of childhood.{% endif %}</h1>
 	{% for post in site.posts limit:1 %}
 		<a href="{{ post.url }}" class="button button-right up wait">
 			<svg class="icon icon-chevron-thin-right">

@@ -12,17 +12,6 @@ permalink: /preface/
 <img src="../img/formalities/desk.jpg" alt="Desk" class="fade wait">
 {:/}
 
-<!-- <div class="div"></div>
-
-<p class="lead">This particular page should contain formalities, messages for your reader(s), links along with downloads for your live CV, NLT document and previous portfolio to highlight improvements. You should also include a section with work that may not fit into a particular section, but you'd like to show off anyway. This, or a section of this on each page. I.e. "unused web projects" or "photos that didn't make the cut".</p>
-
-* Mention the year briefly
-* Link to the previous portfolio, mention why you're doing X, Y and Z
-* Highlight improvements
-* Ramble, mention work placement and link to updated NLT
-* Sidenote, link to live CV
-* Have a dedicated section to unused/unfinished projects, but limit to screenshots -->
-
 <div class="div"></div>
 
 <p class="lead">First and foremost, thank you for reading my portfolio. I appreciate it. Secondly, while I adapt products to client needs, requirements and wishes, my personal style is very much influenced by Scandinavian design and outstanding individuals like Erik Spiekermann, Dieter Rams and Andrew Kim.</p>

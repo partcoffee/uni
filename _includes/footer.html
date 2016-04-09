@@ -1,4 +1,4 @@
-<footer class="footer{% if page.case %}{% else %} footer-home{% endif %}">
+<footer class="footer{% if page.case %}{% else if page.final %} footer-final{% else %} footer-home{% endif %}">
 	<ul class="footer-list">
 		<li class="footer-links">
 			<a href="https://twitter.com/MagnusSkare" target="_blank">Twitter</a>
@@ -18,14 +18,15 @@
 	</ul>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
 
 <script src='{{ site.baseurl }}/js/main.js'></script>
 
 {% if page.slider %}
-<script src='{{ site.baseurl }}/js/slide.js' async></script>{% endif %}
-{% if page.scroll %}
+<script src='{{ site.baseurl }}/js/slide.js' async></script>
+{% endif %}
 
+{% if page.scroll %}
 <!-- Conditional logic to add a "scroll-to" animation on pages where it's needed -->
 <script>
 $('.scroll').click(function(e) {
@@ -36,6 +37,3 @@ $('.scroll').click(function(e) {
 });
 </script>
 {% endif %}
-
-<!-- Adds a warning-message for IE9 and below to encourage the user of modern browsers -->
-{% include warning.html %}

@@ -22,7 +22,7 @@ h2 {
 /* Global body-text styling */
 p, li {
 	text-rendering: optimizeLegibility;
-	font: 400 14px/1.8 $secondary;
+	font: 400 14px/1.7 $secondary;
 
 	@media (min-width: $break) {
 		font-size: 15px;
@@ -51,7 +51,7 @@ blockquote {
 	position: relative;
 
 	p {
-		font: 500 120%/1.8 $secondary;
+		font: 400 120%/1.8 $secondary;
 		margin: 48px auto;
 		text-align: center;
 	}
@@ -66,4 +66,12 @@ blockquote {
 			content: '– ';
 		}
 	}
+}
+
+hr {
+	border: 0;
+	width: 100%;
+	height: 1px;
+	background: #d2d2d2;
+	margin: $margins 0;
 }

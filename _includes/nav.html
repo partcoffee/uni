@@ -2,8 +2,21 @@
 
 <nav class="nav">
 	<ul class="nav-list" >
+		{% if page.final != true %}
 		<li class="nav-icon">
 			<a class="shift" href="/">Magnus Skare</a>
+		</li>
+		{% else %}
+		<li class="nav-links nav-symbol">
+			<a href="/final" class="shift">
+				<img style="height:64px;width:auto;margin-top:-8px;" src="{% if page.final == true %}/{% endif %}../img/final/line.png" alt="Magnus Skare">
+			</a>
+		</li>
+		{% endif %}
+		<li class="nav-links final-link">
+			{% if page.links == true %}<a href="/" class="shift active">X</a>{% else %}
+			<a href="{% if page.final == true %}/final{% else %}/final{% endif %}" class="shift{% if page.final == true %} active{% endif %}">{% if page.final == true %}X{% else %}Semester II{% endif %}</a>
+			{% endif %}
 		</li>
 	</ul>
 </nav>

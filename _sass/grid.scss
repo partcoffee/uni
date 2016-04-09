@@ -10,7 +10,7 @@ $hover-opacity: .9; /* Opacity for hover-effect */
     #General
 \*------------------------------------*/
 
-.grid {
+.grid, .final-grid {
 	width: 100%;
 
 	/* Fixes CSS issues with floats through a pseudo element, makes sure the grid doesn't collapse on itself */
@@ -29,6 +29,121 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 	position: relative;
 }
 
+/* Conditional class for the new homepage */
+.final-portfolio {
+	padding-top: 2em;
+	border-top: 1px solid #d2d2d2;
+
+	/* Size for smaller displays */
+	.col-40 {
+		width: 100%;
+
+		/* Size for bigger displays, with perfected padding */
+		@media (min-width: ($break * 1.5)) {
+			width: 40%;
+			padding-left: 5%;
+			padding-right: 0%;
+			float: right;
+			padding-top: 0;
+		}
+
+		/* Forcing our first paragraph to stick to the very top of the parent container */
+		p:first-of-type {
+			margin-top: 0;
+		}
+	}
+
+	/* Shamelessly using !important rules here to force a certain width. This is usually a
+		 terrible way of doing things, but as this is limited to a single page it could easily have been inline,
+		 styled with a <style> tag or !important rules. I went for !important rules. */
+
+	/* To elaborate on the problem, !important adds a lot of weight to a selector, so if I were to overwrite it at
+		 a later point, the rule with !important would still be used. That forces me to use !important again, which could easily
+		 snowball into something worse like ID-selectors if I'm not careful. */
+	.col-60 {
+		width: 100% !important;
+		padding-right: 0;
+		padding-left: 0;
+
+		@media (min-width: ($break * 1.5)) {
+			width: 60% !important;
+		}
+	}
+
+	/* Specific rules for the top item in the portfolio-grid on the new homepage */
+	.col-100 {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+
+		&:hover, &:focus {
+			opacity: $hover-opacity;
+		}
+
+		&:nth-of-type(1) .project-name {
+			color: #fff;
+		}
+
+		@media (min-width: ($break * 1.5)) {
+			padding: 2px !important;
+			margin: 0 !important;
+		}
+	}
+
+	/* Specific rules for the remaining items in the portfolio-grid on the new homepage */
+	.col-50 {
+		@include animate(0.2s ease-out);
+		padding: ($padding / 2);
+		width: 50%;
+		line-height: 0;
+		font-size: 0;
+		transform: translateZ(0);
+
+		&:nth-of-type(2) {
+			padding-left: 0;
+			padding-top: 0;
+		}
+
+		&:nth-of-type(3) {
+			padding-right: 0;
+			padding-top: 0;
+		}
+
+		&:nth-of-type(4) {
+			padding-left: 0;
+		}
+
+		&:nth-of-type(5) {
+			padding-right: 0;
+		}
+
+		&:hover, &:focus {
+			opacity: $hover-opacity;
+		}
+
+		@media (min-width: ($break * 1)) {
+			width: 50%;
+			margin-bottom: ($padding/2);
+			padding: ($padding/2) ($padding/2) 0;
+		}
+
+		@media (min-width: ($break * 1.5)) {
+			padding: 2px !important;
+			margin: 0 !important;
+		}
+	}
+
+	/* Adjusted project-information for the new homepage, with limited space */
+	.project-name {
+		bottom: 1em;
+		left: 1em;
+		padding: .5em;
+		font: 400 .7rem/1 $secondary;
+		text-transform: uppercase;
+		letter-spacing: .1rem;
+	}
+}
+
 /* Column layout styling */
 .col-100 {
 	@include animate(0.2s ease-out);
@@ -37,6 +152,7 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 	margin-bottom: $padding;
 	line-height: 0;
 	font-size: 0;
+	transform: translateZ(0);
 
 	/* It's important to define the focus-effect as well for users without a mouse-input.
 	   This makes the columns act as if they have been hovered over when the user slects them through a keyboard */
@@ -143,13 +259,12 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 .project-name {
 	position: absolute;
 	color: #fff;
-	font-weight: 400;
 	bottom: $margins;
 	left: $margins;
 	width: 80%;
 	font-size: 18px;
 	margin: 0;
-	font: 300 18px/1 $primary;
+	font: 100 18px/1 $primary;
 
 	span {
 		display: block;
@@ -172,7 +287,3 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 		color: $highlight-color;
 	}
 }
-
-
-
-

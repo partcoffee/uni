@@ -6,12 +6,13 @@
 
 
 /* Fonts */
-/* Proxima Nova is defined twice here as I intend to use it for headings AND body-text.
-While it may seem strange to define this twice, it gives me the option to change the body text
-with one line of code, instead of updating it everywhere else.
+/*
+Using Typekit to source these fonts, using the secondary font as a fallback font should the primary
+font fail to load for some reason. Helvetica, a system font on many computers and Arial will be used as
+web-safe fonts if all else fails.
 */
-$primary: 'proxima-nova', sans-serif;
-$secondary: 'proxima-nova', sans-serif;
+$primary: 'neuzeit-grotesk', 'proxima-nova', 'Helvetica', 'Arial', sans-serif;
+$secondary: 'proxima-nova', 'Helvetica', 'Arial', sans-serif;
 
 
 /* Colours */
@@ -21,12 +22,13 @@ $main-color: #555;
 $light: #9f9f9f;
 $highlight-color: #363a42;
 $color: #eaeaea;
+// #21979a
 
 
 /* Other */
 /* These are primarily breakpoints or abolsute volues I intend to keep using throughout my document */
 $break: 520px;
-$total: 960px;
+$total: 1040px;
 $margins: 30px;
 
 
@@ -74,9 +76,14 @@ body {
 }
 
 img {
-	/* Reset */
+	/* Reset default styles from the browser */
 	border: 0;
 	max-width: 100%;
+}
+
+iframe {
+	border: 0;
+	overflow: hidden;
 }
 
 ul, li {
@@ -85,16 +92,6 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
-
-// h1, h2, p, li {
-// 	transition: .2s ease-out;
-// }
-
-// .wf-loading {
-// 	h1, h2, p, li {
-// 		color: transparent;
-// 	}
-// }
 
 
 
@@ -111,13 +108,19 @@ ul, li {
 	max-width: $total;
 	width: 100%;
 
+	/* This is a strange one, but it moves the div with the .wrapper-class to its own layer,
+	which means animating it is less expensive for the browser, as it will no longer have to
+	re-paint the entire document when it changes. This moves us closer to 60 frames per second on
+	our initial load, and when fading the page in and out. */
+	transform: translateZ(0);
+
 	@media (min-width: $break) {
 		width: 80%;
 	}
 
 	/* Media-queries nested inside the element for maintainability. This is available to us because we use Sass (.scss) */
 	@media (min-width: ($total * 1.5)) { /* $total is already defined, but we can use maths to further manipulate the value */
-		max-width: ($total * 1.25);
+		max-width: ($total * 1.1);
 	}
 
 	@media (max-width: $break - 1) {
@@ -143,13 +146,21 @@ ul, li {
 	position: relative;
 	width: 100%;
 	z-index: 999; /* To always be on top */
+	transform: translateZ(0);
 }
 
 /* Can be excluded, but useful if I want to add another nav-element to my page */
 .nav-links {
+	float: right;
 	display: inline-block;
 	font-size: 12px;
-	
+
+	&.final-link {
+		a {
+			color: #d1d1d1;
+		}
+	}
+
 	a {
 		display: block;
 		padding: 4px;
@@ -163,12 +174,33 @@ ul, li {
 		}
 	}
 
-	&:first-of-type a {
-		padding-left: 0;
+	&:last-of-type {
+		margin-right: 1em;
+	}
+}
+
+/* New homepage logo styling */
+.nav-symbol {
+	float: left;
+	margin-top: -14px;
+	line-height: 0;
+
+	a:focus {
+		outline: 0;
 	}
 
-	&:nth-last-child(2) a {
-		padding-right: 0;
+	a:hover img, a:focus img {
+		transform: scaleY(-1);
+	}
+
+	// a:hover img, a:focus img {
+	// 	transform: scaleX(-1);
+	// 	-webkit-filter: invert(1) contrast(2);
+	// }
+
+	img {
+		transition: .3s ease-out;
+		width: 44px;
 	}
 }
 
@@ -269,11 +301,11 @@ ul, li {
 .home-header {
 	width: 100%;
 	margin: 0 auto;
-	max-width: ($break * 1.2);
+	max-width: ($break + 100);
 	text-align: center;
 
 	.header-text {
-		margin: 8% auto 6%;
+		margin: 8% auto;
 		font-size: 24px;
 
 		@media (min-width: ($break * 1.2)) {
@@ -290,14 +322,20 @@ ul, li {
 	}
 }
 
+/* Conditional class for the new homepage header, with nested text-styles */
+.header-final {
+	margin: 0;
+	text-align: left;
+	padding: 4em 0 2em;
+}
+
 .header-text {
-	font: 300 26px/1.2 $primary;
+	font: 100 26px/1.2 $primary;
 	margin: 0 0 0 (26px/-20);
-	padding: 4% 0;
+	padding: .25em 0;
 
 	@media (min-width: ($break * 1.2)) {
 		font-size: 38px;
-		font-weight: 100;
 		margin-left: (30px/-20);
 		padding: 2% 0;
 	}
@@ -321,7 +359,7 @@ ul, li {
 
 /* Option to have text below the headline if needed */
 .header-subtext {
-	font: 400 12px/1 $primary;
+	font: 300 12px/1 $primary;
 	margin: 20px 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -334,6 +372,11 @@ ul, li {
 /* Optional CSS extends to add more pages if I need it */
 .page-header {
 	@extend .header;
+	padding: 4em 0 3em;
+
+	@media (min-width: $break) {
+		padding: 6em 0 4em;
+	}
 }
 
 .page-header-text {
@@ -346,6 +389,24 @@ ul, li {
 
 	@media (min-width: $break) {
 		font-size: 12px;
+	}
+}
+
+.block-link {
+	border-bottom: 1px solid $color;
+	box-shadow: inset 0 -5px 0 $color;
+	color: inherit;
+	padding: 2px 5px;
+	background: $color;
+
+	.final & {
+		box-shadow: none;
+		background: 0;
+		border-bottom: 2px solid $color;
+	}
+
+	&:hover {
+		opacity: .75;
 	}
 }
 
@@ -369,6 +430,17 @@ ul, li {
 		}
 	}
 
+	.final & .lazy {
+		-webkit-filter: blur(10px);
+		-moz-filter: blur(10px);
+		-ms-filter: blur(10px);
+		-o-filter: blur(10px);
+		filter: blur(10px);
+		transition: -webkit-filter .3s ease-out;
+		transition: filter .3s ease-out;
+		transition: filter .3s ease-out, -webkit-filter .3s ease-out;
+	}
+
 	h1, h2, h3, p, ul {
 		max-width: ($break + 20);
 		margin-left: auto;
@@ -381,15 +453,7 @@ ul, li {
 	
 	/* Specific styling to everything but a link is achived by using the :not pseudo-selector */
 	a:not(.button) {
-		border-bottom: 1px solid $color;
-		box-shadow: inset 0 -5px 0 $color;
-		color: inherit;
-		padding: 2px 5px;
-		background: $color;
-
-		&:hover {
-			opacity: .75;
-		}
+		@extend .block-link;
 	}
 
 	ul {
@@ -400,11 +464,11 @@ ul, li {
 		display: block;
 		margin: $margins auto;
 		max-width: 100%;
-		max-height: $total;
-		width: auto;
+		// max-height: $total;
+		width: 100%;
 
 		&:first-of-type {
-			max-width: 100%;
+			max-width: none;
 		}
 	}
 
@@ -415,6 +479,7 @@ ul, li {
 
 	.narrow {
 		max-width: ($break + 20);
+		max-height: $total;
 	}
 }
 
@@ -452,13 +517,23 @@ ul, li {
 	}
 }
 
+.pull-left span {
+	right: auto;
+	left: -220px;
+	text-align: right;
+}
+
 /* Handles captions for images and gives them the correct margins for desktop, mobile and everything in between */
 .caption {
 	display: block;
 	margin: $margins 0;
 	position: relative;
 
-	img, img:first-of-type {
+	.article > & {
+		margin-top: 15px !important;
+	}
+
+	img, img:first-of-type, .article-video {
 		margin: 0 auto !important;
 	}
 
@@ -470,7 +545,7 @@ ul, li {
 	span {
 		color: $light;
 		display: block;
-		font: 400 12px/1.6 $secondary;
+		font: 300 12px/1.6 $secondary;
 		margin: 0 auto;
 		max-width: 80%;
 		padding-top: 10px;
@@ -498,6 +573,10 @@ ul, li {
 	}
 }
 
+.footer-final {
+	padding-top: 2em;
+}
+
 .footer-list {
 	padding-top: 20px;
 	border-top: 1px solid rgba($light, .25);
@@ -506,6 +585,7 @@ ul, li {
 
 .footer-links {
 	@extend .nav-links;
+	float: none;
 
 	&:last-of-type {
 		display: block;
@@ -513,6 +593,10 @@ ul, li {
 		a {
 			display: inline-block
 		}
+	}
+
+	&:last-of-type {
+		margin: 0;
 	}
 }
 
@@ -543,6 +627,10 @@ ul, li {
 	padding: 0 1px 1px;
 }
 
+.lined {
+	border: 1px solid $color;
+}
+
 /* Ignores the maximum height set on images if we want to display taller images (full-page screenshots etc.) */
 .tall {
 	max-height: none !important;
@@ -567,6 +655,44 @@ ul, li {
 
 		img {
 			margin: 0 !important;
+		}
+	}
+}
+
+.final .printed-thing {
+	.contain, .final-grid {
+		margin: 15px auto;
+
+		@media (min-width: $break) {
+			margin: 30px auto;
+		}
+	}
+}
+
+.final-grid {
+	.col-50 {
+		width: 50%;
+		padding: 0;
+
+		&:first-of-type {
+			padding-right: 7.5px;
+		}
+
+		&:last-of-type {
+			padding-left: 7.5px;
+		}
+
+		@media (min-width: $break) {
+			width: 50%;
+
+			&:first-of-type {
+				padding-right: 15px;
+			}
+
+			&:last-of-type {
+				padding-left: 15px;
+				padding-top: 0;
+			}
 		}
 	}
 }
@@ -712,6 +838,35 @@ ul, li {
 	text-align: center;
 }
 
+/* Specific lazyload classes */
+.final .lazyloaded {
+	/* Removes blur, !important rules to overwrite nesting */
+	-webkit-filter: blur(0) !important;
+	-moz-filter: blur(0) !important;
+	-ms-filter: blur(0) !important;
+	-o-filter: blur(0) !important;
+	filter: blur(0) !important;
+}
+
+.black {
+	background: $main-color;
+}
+
+.final .contain {
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin: 30px auto;
+
+	img, img:first-of-type, iframe, .article-video {
+		margin: 0 !important;
+	}
+}
+
+.final .caption .contain {
+	margin: 0;
+}
+
 
 
 
@@ -735,6 +890,9 @@ ul, li {
 
 /* Third-party slider styling */
 @import 'slider';
+
+/* Search */
+@import 'search';
 
 /* Specific to print */
 @import 'print';
