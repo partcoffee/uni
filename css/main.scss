@@ -11,8 +11,8 @@ Using Typekit to source these fonts, using the secondary font as a fallback font
 font fail to load for some reason. Helvetica, a system font on many computers and Arial will be used as
 web-safe fonts if all else fails.
 */
-$primary: 'neuzeit-grotesk', 'proxima-nova', 'Helvetica', 'Arial', sans-serif;
 $secondary: 'proxima-nova', 'Helvetica', 'Arial', sans-serif;
+$primary: 'neuzeit-grotesk', $secondary;
 
 
 /* Colours */
@@ -82,8 +82,8 @@ img {
 }
 
 iframe {
-	border: 0;
-	overflow: hidden;
+	border: 0; /* Removes the iframe border */
+	overflow: hidden; /* As the border is still visible in iOS Safari, this is needed */
 }
 
 ul, li {
@@ -192,11 +192,6 @@ ul, li {
 	a:hover img, a:focus img {
 		transform: scaleY(-1);
 	}
-
-	// a:hover img, a:focus img {
-	// 	transform: scaleX(-1);
-	// 	-webkit-filter: invert(1) contrast(2);
-	// }
 
 	img {
 		transition: .3s ease-out;
@@ -517,6 +512,7 @@ ul, li {
 	}
 }
 
+/* Forcing our pull-quote to the left side of the text instead */
 .pull-left span {
 	right: auto;
 	left: -220px;
@@ -573,6 +569,7 @@ ul, li {
 	}
 }
 
+/* Custom padding for the final portfolio */
 .footer-final {
 	padding-top: 2em;
 }
@@ -627,6 +624,7 @@ ul, li {
 	padding: 0 1px 1px;
 }
 
+/* To sep. screenshots from the background, more than the class above */
 .lined {
 	border: 1px solid $color;
 }
@@ -669,6 +667,7 @@ ul, li {
 	}
 }
 
+/* Specific styles for our final grid in articles */
 .final-grid {
 	.col-50 {
 		width: 50%;
@@ -848,10 +847,15 @@ ul, li {
 	filter: blur(0) !important;
 }
 
+/* On-demand background-colour */
 .black {
 	background: $main-color;
 }
 
+/* This forces the content to stay in one place, as the aspect ratio is 16:9
+   due to our padding-bottom. This forces the images/videos to take up as much
+   space as they normally would, even before they're loaded in. No more content
+   jumping around! Whee! */
 .final .contain {
 	overflow: hidden;
 	height: 0;
@@ -863,6 +867,7 @@ ul, li {
 	}
 }
 
+/* Specific margin for new portfolio container */
 .final .caption .contain {
 	margin: 0;
 }
@@ -893,8 +898,3 @@ ul, li {
 
 /* Specific to print */
 @import 'print';
-
-
-
-
-
