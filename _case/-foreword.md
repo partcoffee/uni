@@ -29,7 +29,7 @@ I still find the foundation behind this portfolio to be important, so please hav
 
 You can read more about all of the above in the <a href="/final/online-portfolio/">online portfolio section</a>.
 
-See how I work in the <a target="_blank" href="/final/workflow-and-conclusion/">workflow section</a>, download my <a target="_blank" href="#">live CV</a>, and explore how I made my <a target="_blank" href="/final/printed-portfolio">printed portfolio</a>. All photography by me unless otherwise specified.
+See how I work in the <a target="_blank" href="/final/workflow-and-conclusion/">workflow section</a>, download my <a target="_blank" href="/../img/assets/Y3S2-MagnusSkare-CV.pdf">live CV</a> and <a href="/../img/assets/Y3S2-MagnusSkare-SAS.pdf" target="_blank">self assessment sheet</a> , and explore how I made my <a target="_blank" href="/final/printed-portfolio">printed portfolio</a>. All photography by me unless otherwise specified.
 
 <div class="div"></div>
 

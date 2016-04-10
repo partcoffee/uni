@@ -80,6 +80,10 @@ $hover-opacity: .9; /* Opacity for hover-effect */
 			opacity: $hover-opacity;
 		}
 
+		.final &:hover, &:focus {
+			opacity: 1;
+		}
+
 		&:nth-of-type(1) .project-name {
 			color: #fff;
 		}

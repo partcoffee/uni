@@ -79,9 +79,17 @@ It's also worth mentioning the primary challenge of working in print – and tha
 
 <div class="div"></div>
 
+## Design and self-branding
+
+This one was tricky for me. I'm not a freelance designer or developer, and therefore not looking to brand myself as such. A personal logo may often imply this, and while it could have been a shortcut to consistent self-branding, I believe it would also give the wrong impression. With that in mind, I had to think of different ways to convey a consistent style throughout my online- and printed portfolio, and spent a significant amount of time making sure it still felt "Magnus."
+
+I wanted something modern, and using subtle shades of white and black, I let the photography and typography speak for me – with no need for flourishes or excessive distracting elements. I believe I achieved my goal by keeping this "Muji"-philosophy of "no design" throughout the process, and I hope it's still recognisable as a "Magnus" product.
+
+<div class="div"></div>
+
 ## Production
 
-After writing all my text and shooting all the necessary pictures, I had to assemble everything. This was initially prototyped in low resolution Photoshop file, and later made production-ready in InDesign – using different weights of Work Sans for a timeless typographic impression. The final piece was printed as a 21cm x 27.5cm portfolio, on 32x 170g pages with a 300g front- and back page. You can see the final finished piece below or (hopefully) on your desk right now.
+After writing all my text and shooting all the necessary pictures, I had to assemble everything. This was initially prototyped in low resolution Photoshop file, and later made production-ready in InDesign – using different weights of Work Sans for a timeless typographic impression. I would have liked to use Proxima Nova, but after test-printing, it did not work as well as it does on a screen-based medium. The final piece was printed as a 21cm x 27.5cm portfolio, on 32x 170g pages with a 300g front- and back page. You can see the final finished piece below or (hopefully) on your desk right now.
 
 <div class="div"></div>
 

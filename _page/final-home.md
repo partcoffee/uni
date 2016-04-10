@@ -17,10 +17,10 @@ permalink: /final/
 		<hr>
 		<ul>
 			<li><a href="../final/foreword/" class="shift">Foreword</a></li>
-			<li><a href="../final/nlt2/" class="shift">NLT2</a></li>
 			<li><a href="../final/online-portfolio" class="shift">Online Portfolio</a></li>
 			<li><a href="../final/printed-portfolio" class="shift">Printed Portfolio</a></li>
 			<li><a href="../final/bits-and-pieces" class="shift">Bits & Pieces</a></li>
+			<li><a href="../final/negotiated-learning-agreement/" class="shift">Negotiated Learning Agreement</a></li>
 			<li><a href="../final/workflow-and-conclusion" class="shift">Workflow & Conclusion</a></li>
 		</ul>
 		<hr>
@@ -29,7 +29,7 @@ permalink: /final/
 	</div>
 	<div class="grid col-60 entry">
 		<div class="col-100">
-			<img src="../img/bit/show.jpg" alt="Image">
+			<img src="../img/final/stair.jpg" alt="Image">
 		</div>
 	</div>
 </section>

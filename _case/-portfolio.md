@@ -121,7 +121,7 @@ On the topic of maintainability and technology, I would like to refer you to wha
 
 I had several different approaches in mind, and for a while I wanted to show how I work in WordPress by developing my personal portfolio for it. However, with speed in mind and the control I expected from each page, it seemed like too ineffecient for my use case.
 
-I also experimented with different layouts, most notably a layout similar to my <a href="/experience" target="_blank">University Experience</a> microsite. However, I still wanted my content to be king, and thus embraced a simpler approach – correcting it according to the feedback received.
+I also experimented with different layouts, most notably a layout similar to my <a href="/experience" target="_blank">University Experience</a> microsite – which should serve as another concept as well, but never made it far. However, I still wanted my content to be king, and thus embraced a simpler approach – correcting it according to the feedback received.
 
 In terms of layout, the new front page became troublesome with too many projects in a split 50/50 layout – as I had little control over how "long" each section would be. What looked great on a desktop layout, came across as odd on tablets and large phones, and vica versa. <a href="https://youtu.be/fTWdSSj4Oc0" target="_blank">This video</a> should illustrate what I mean. Finding projects all the way down the page became tedious, so my solution was to list the projects in the text instead, using a single image – like a magazine or newspaper. This makes the projects accessible straight away, while the image sets the mood.
 

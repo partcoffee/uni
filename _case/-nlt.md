@@ -6,7 +6,7 @@ final: true
 title: "Negotiated Learning Agreement: Work"
 headline: "Negotiated Learning Agreement: Work"
 
-permalink: /final/nlt2/
+permalink: /final/negotiated-learning-agreement/
 ---
 
 {::nomarkdown}

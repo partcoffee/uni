@@ -35,8 +35,11 @@ This is essentially to make each case study more approachable, avoiding adnormal
 {:/}
 
 {::nomarkdown}
-<div class="contain">
-	<img src="/../img/bit/18-lq.png" data-src="/../img/bit/18.png" alt="Image" class="lazyload lazy">
+<div class="caption mid">
+	<div class="contain">
+		<img src="/../img/bit/18-lq.png" data-src="/../img/bit/18.png" alt="Image" class="lazyload lazy">
+	</div>
+	<span><a href="http://uni.magnusskare.com/experience/" target="_blank">Experience</a> works best in Chrome and Safari on OSX, along with Safari on iOS.</span>
 </div>
 {:/}
 
