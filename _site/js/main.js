@@ -1,1 +1,689 @@
-!function(t,e){var i=e(t,t.document);t.lazySizes=i,"object"==typeof module&&module.exports&&(module.exports=i)}(window,function(t,e){"use strict";if(e.getElementsByClassName){var i,n=e.documentElement,o=t.HTMLPictureElement&&"sizes"in e.createElement("img"),r="addEventListener",s="getAttribute",a=t[r],l=t.setTimeout,c=t.requestAnimationFrame||l,d=/^picture$/i,u=["load","error","lazyincluded","_lazyloaded"],f={},h=Array.prototype.forEach,p=function(t,e){return f[e]||(f[e]=new RegExp("(\\s|^)"+e+"(\\s|$)")),f[e].test(t[s]("class")||"")&&f[e]},y=function(t,e){p(t,e)||t.setAttribute("class",(t[s]("class")||"").trim()+" "+e)},g=function(t,e){var i;(i=p(t,e))&&t.setAttribute("class",(t[s]("class")||"").replace(i," "))},w=function(t,e,i){var n=i?r:"removeEventListener";i&&w(t,e),u.forEach(function(i){t[n](i,e)})},m=function(t,i,n,o,r){var s=e.createEvent("CustomEvent");return s.initCustomEvent(i,!o,!r,n||{}),t.dispatchEvent(s),s},v=function(e,n){var r;!o&&(r=t.picturefill||i.pf)?r({reevaluate:!0,elements:[e]}):n&&n.src&&(e.src=n.src)},z=function(t,e){return(getComputedStyle(t,null)||{})[e]},A=function(t,e,n){for(n=n||t.offsetWidth;n<i.minSize&&e&&!t._lazysizesWidth;)n=e.offsetWidth,e=e.parentNode;return n},x=function(e){var i,n=0,o=t.Date,r=function(){i=!1,n=o.now(),e()},s=function(){l(r)},a=function(){c(s)};return function(){if(!i){var t=125-(o.now()-n);i=!0,6>t&&(t=6),l(a,t)}}},b=function(){var o,u,f,A,b,S,E,k,W,T,N,P,H,_,O,R=/^img$/i,M=/^iframe$/i,q="onscroll"in t&&!/glebot/.test(navigator.userAgent),B=0,$=0,F=0,L=0,Q=function(t){F--,t&&t.target&&w(t.target,Q),(!t||0>F||!t.target)&&(F=0)},j=function(t,i){var o,r=t,s="hidden"==z(e.body,"visibility")||"hidden"!=z(t,"visibility");for(W-=i,P+=i,T-=i,N+=i;s&&(r=r.offsetParent)&&r!=e.body&&r!=n;)s=(z(r,"opacity")||1)>0,s&&"visible"!=z(r,"overflow")&&(o=r.getBoundingClientRect(),s=N>o.left&&T<o.right&&P>o.top-1&&W<o.bottom+1);return s},D=function(){var t,e,r,a,l,c,d,h,p;if((b=i.loadMode)&&8>F&&(t=o.length)){e=0,L++,null==_&&("expand"in i||(i.expand=n.clientHeight>600?n.clientWidth>860?500:410:359),H=i.expand,_=H*i.expFactor),_>$&&1>F&&L>3&&b>2?($=_,L=0):$=b>1&&L>2&&6>F?H:B;for(;t>e;e++)if(o[e]&&!o[e]._lazyRace)if(q)if((h=o[e][s]("data-expand"))&&(c=1*h)||(c=$),p!==c&&(E=innerWidth+c*O,k=innerHeight+c,d=-1*c,p=c),r=o[e].getBoundingClientRect(),(P=r.bottom)>=d&&(W=r.top)<=k&&(N=r.right)>=d*O&&(T=r.left)<=E&&(P||N||T||W)&&(f&&3>F&&!h&&(3>b||4>L)||j(o[e],c))){if(U(o[e]),l=!0,F>9)break}else!l&&f&&!a&&4>F&&4>L&&b>2&&(u[0]||i.preloadAfterLoad)&&(u[0]||!h&&(P||N||T||W||"auto"!=o[e][s](i.sizesAttr)))&&(a=u[0]||o[e]);else U(o[e]);a&&!l&&U(a)}},K=x(D),I=function(t){y(t.target,i.loadedClass),g(t.target,i.loadingClass),w(t.target,Z)},Z=function(t){t={target:t.target},c(function(){I(t)})},G=function(t,e){try{t.contentWindow.location.replace(e)}catch(i){t.src=e}},V=function(t){var e,n,o=t[s](i.srcsetAttr);(e=i.customMedia[t[s]("data-media")||t[s]("media")])&&t.setAttribute("media",e),o&&t.setAttribute("srcset",o),e&&(n=t.parentNode,n.insertBefore(t.cloneNode(),t),n.removeChild(t))},J=function(){var t,e=[],i=function(){for(;e.length;)e.shift()();t=!1},n=function(n){e.push(n),t||(t=!0,c(i))};return{add:n,run:i}}(),U=function(t){var e,n,o,r,a,u,z,x=R.test(t.nodeName),b=x&&(t[s](i.sizesAttr)||t[s]("sizes")),S="auto"==b;(!S&&f||!x||!t.src&&!t.srcset||t.complete||p(t,i.errorClass))&&(S&&(z=t.offsetWidth),t._lazyRace=!0,F++,i.rC&&(z=i.rC(t,z)||z),J.add(function(){(a=m(t,"lazybeforeunveil")).defaultPrevented||(b&&(S?(C.updateElem(t,!0,z),y(t,i.autosizesClass)):t.setAttribute("sizes",b)),n=t[s](i.srcsetAttr),e=t[s](i.srcAttr),x&&(o=t.parentNode,r=o&&d.test(o.nodeName||"")),u=a.detail.firesLoad||"src"in t&&(n||e||r),a={target:t},u&&(w(t,Q,!0),clearTimeout(A),A=l(Q,2500),y(t,i.loadingClass),w(t,Z,!0)),r&&h.call(o.getElementsByTagName("source"),V),n?t.setAttribute("srcset",n):e&&!r&&(M.test(t.nodeName)?G(t,e):t.src=e),(n||r)&&v(t,{src:e})),c(function(){t._lazyRace&&delete t._lazyRace,g(t,i.lazyClass),(!u||t.complete)&&(u?Q(a):F--,I(a))})}))},X=function(){if(!f){if(Date.now()-S<999)return void l(X,999);var t,n=function(){i.loadMode=3,K()};f=!0,i.loadMode=3,e.hidden?(D(),J.run()):K(),a("scroll",function(){3==i.loadMode&&(i.loadMode=2),clearTimeout(t),t=l(n,99)},!0)}};return{_:function(){S=Date.now(),o=e.getElementsByClassName(i.lazyClass),u=e.getElementsByClassName(i.lazyClass+" "+i.preloadClass),O=i.hFac,a("scroll",K,!0),a("resize",K,!0),t.MutationObserver?new MutationObserver(K).observe(n,{childList:!0,subtree:!0,attributes:!0}):(n[r]("DOMNodeInserted",K,!0),n[r]("DOMAttrModified",K,!0),setInterval(K,999)),a("hashchange",K,!0),["focus","mouseover","click","load","transitionend","animationend","webkitAnimationEnd"].forEach(function(t){e[r](t,K,!0)}),/d$|^c/.test(e.readyState)?X():(a("load",X),e[r]("DOMContentLoaded",K),l(X,2e4)),K(o.length>0)},checkElems:K,unveil:U}}(),C=function(){var t,n=function(t,e,i){var n,o,r,s,a=t.parentNode;if(a&&(i=A(t,a,i),s=m(t,"lazybeforesizes",{width:i,dataAttr:!!e}),!s.defaultPrevented&&(i=s.detail.width,i&&i!==t._lazysizesWidth))){if(t._lazysizesWidth=i,i+="px",t.setAttribute("sizes",i),d.test(a.nodeName||""))for(n=a.getElementsByTagName("source"),o=0,r=n.length;r>o;o++)n[o].setAttribute("sizes",i);s.detail.dataAttr||v(t,s.detail)}},o=function(){var e,i=t.length;if(i)for(e=0;i>e;e++)n(t[e])},r=x(o);return{_:function(){t=e.getElementsByClassName(i.autosizesClass),a("resize",r)},checkElems:r,updateElem:n}}(),S=function(){S.i||(S.i=!0,C._(),b._())};return function(){var e,n={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.7,hFac:.8,loadMode:2};i=t.lazySizesConfig||t.lazysizesConfig||{};for(e in n)e in i||(i[e]=n[e]);t.lazySizesConfig=i,l(function(){i.init&&S()})}(),{cfg:i,autoSizer:C,loader:b,init:S,uP:v,aC:y,rC:g,hC:p,fire:m,gW:A}}}),is_safari=!!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/),is_firefox=navigator.userAgent.toLowerCase().indexOf("firefox")>-1;var control=!1;$(document).on("keyup keydown",function(t){control=t.metaKey}),$(".shift").on("click",function(){control||is_safari||is_firefox||$("body").addClass("animate").css("opacity",0)}),function(){"use strict";function t(n){if(!n)throw new Error("No options passed to Waypoint constructor");if(!n.element)throw new Error("No element option passed to Waypoint constructor");if(!n.handler)throw new Error("No handler option passed to Waypoint constructor");this.key="waypoint-"+e,this.options=t.Adapter.extend({},t.defaults,n),this.element=this.options.element,this.adapter=new t.Adapter(this.element),this.callback=n.handler,this.axis=this.options.horizontal?"horizontal":"vertical",this.enabled=this.options.enabled,this.triggerPoint=null,this.group=t.Group.findOrCreate({name:this.options.group,axis:this.axis}),this.context=t.Context.findOrCreateByElement(this.options.context),t.offsetAliases[this.options.offset]&&(this.options.offset=t.offsetAliases[this.options.offset]),this.group.add(this),this.context.add(this),i[this.key]=this,e+=1}var e=0,i={};t.prototype.queueTrigger=function(t){this.group.queueTrigger(this,t)},t.prototype.trigger=function(t){this.enabled&&this.callback&&this.callback.apply(this,t)},t.prototype.destroy=function(){this.context.remove(this),this.group.remove(this),delete i[this.key]},t.prototype.disable=function(){return this.enabled=!1,this},t.prototype.enable=function(){return this.context.refresh(),this.enabled=!0,this},t.prototype.next=function(){return this.group.next(this)},t.prototype.previous=function(){return this.group.previous(this)},t.invokeAll=function(t){var e=[];for(var n in i)e.push(i[n]);for(var o=0,r=e.length;r>o;o++)e[o][t]()},t.destroyAll=function(){t.invokeAll("destroy")},t.disableAll=function(){t.invokeAll("disable")},t.enableAll=function(){t.invokeAll("enable")},t.refreshAll=function(){t.Context.refreshAll()},t.viewportHeight=function(){return window.innerHeight||document.documentElement.clientHeight},t.viewportWidth=function(){return document.documentElement.clientWidth},t.adapters=[],t.defaults={context:window,continuous:!0,enabled:!0,group:"default",horizontal:!1,offset:0},t.offsetAliases={"bottom-in-view":function(){return this.context.innerHeight()-this.adapter.outerHeight()},"right-in-view":function(){return this.context.innerWidth()-this.adapter.outerWidth()}},window.Waypoint=t}(),function(){"use strict";function t(t){window.setTimeout(t,1e3/60)}function e(t){this.element=t,this.Adapter=o.Adapter,this.adapter=new this.Adapter(t),this.key="waypoint-context-"+i,this.didScroll=!1,this.didResize=!1,this.oldScroll={x:this.adapter.scrollLeft(),y:this.adapter.scrollTop()},this.waypoints={vertical:{},horizontal:{}},t.waypointContextKey=this.key,n[t.waypointContextKey]=this,i+=1,this.createThrottledScrollHandler(),this.createThrottledResizeHandler()}var i=0,n={},o=window.Waypoint,r=window.onload;e.prototype.add=function(t){var e=t.options.horizontal?"horizontal":"vertical";this.waypoints[e][t.key]=t,this.refresh()},e.prototype.checkEmpty=function(){var t=this.Adapter.isEmptyObject(this.waypoints.horizontal),e=this.Adapter.isEmptyObject(this.waypoints.vertical);t&&e&&(this.adapter.off(".waypoints"),delete n[this.key])},e.prototype.createThrottledResizeHandler=function(){function t(){e.handleResize(),e.didResize=!1}var e=this;this.adapter.on("resize.waypoints",function(){e.didResize||(e.didResize=!0,o.requestAnimationFrame(t))})},e.prototype.createThrottledScrollHandler=function(){function t(){e.handleScroll(),e.didScroll=!1}var e=this;this.adapter.on("scroll.waypoints",function(){(!e.didScroll||o.isTouch)&&(e.didScroll=!0,o.requestAnimationFrame(t))})},e.prototype.handleResize=function(){o.Context.refreshAll()},e.prototype.handleScroll=function(){var t={},e={horizontal:{newScroll:this.adapter.scrollLeft(),oldScroll:this.oldScroll.x,forward:"right",backward:"left"},vertical:{newScroll:this.adapter.scrollTop(),oldScroll:this.oldScroll.y,forward:"down",backward:"up"}};for(var i in e){var n=e[i],o=n.newScroll>n.oldScroll,r=o?n.forward:n.backward;for(var s in this.waypoints[i]){var a=this.waypoints[i][s],l=n.oldScroll<a.triggerPoint,c=n.newScroll>=a.triggerPoint,d=l&&c,u=!l&&!c;(d||u)&&(a.queueTrigger(r),t[a.group.id]=a.group)}}for(var f in t)t[f].flushTriggers();this.oldScroll={x:e.horizontal.newScroll,y:e.vertical.newScroll}},e.prototype.innerHeight=function(){return this.element==this.element.window?o.viewportHeight():this.adapter.innerHeight()},e.prototype.remove=function(t){delete this.waypoints[t.axis][t.key],this.checkEmpty()},e.prototype.innerWidth=function(){return this.element==this.element.window?o.viewportWidth():this.adapter.innerWidth()},e.prototype.destroy=function(){var t=[];for(var e in this.waypoints)for(var i in this.waypoints[e])t.push(this.waypoints[e][i]);for(var n=0,o=t.length;o>n;n++)t[n].destroy()},e.prototype.refresh=function(){var t,e=this.element==this.element.window,i=this.adapter.offset(),n={};this.handleScroll(),t={horizontal:{contextOffset:e?0:i.left,contextScroll:e?0:this.oldScroll.x,contextDimension:this.innerWidth(),oldScroll:this.oldScroll.x,forward:"right",backward:"left",offsetProp:"left"},vertical:{contextOffset:e?0:i.top,contextScroll:e?0:this.oldScroll.y,contextDimension:this.innerHeight(),oldScroll:this.oldScroll.y,forward:"down",backward:"up",offsetProp:"top"}};for(var o in t){var r=t[o];for(var s in this.waypoints[o]){var a,l,c,d,u,f=this.waypoints[o][s],h=f.options.offset,p=f.triggerPoint,y=0,g=null==p;f.element!==f.element.window&&(y=f.adapter.offset()[r.offsetProp]),"function"==typeof h?h=h.apply(f):"string"==typeof h&&(h=parseFloat(h),f.options.offset.indexOf("%")>-1&&(h=Math.ceil(r.contextDimension*h/100))),a=r.contextScroll-r.contextOffset,f.triggerPoint=y+a-h,l=p<r.oldScroll,c=f.triggerPoint>=r.oldScroll,d=l&&c,u=!l&&!c,!g&&d?(f.queueTrigger(r.backward),n[f.group.id]=f.group):!g&&u?(f.queueTrigger(r.forward),n[f.group.id]=f.group):g&&r.oldScroll>=f.triggerPoint&&(f.queueTrigger(r.forward),n[f.group.id]=f.group)}}for(var w in n)n[w].flushTriggers();return this},e.findOrCreateByElement=function(t){return e.findByElement(t)||new e(t)},e.refreshAll=function(){for(var t in n)n[t].refresh()},e.findByElement=function(t){return n[t.waypointContextKey]},window.onload=function(){r&&r(),e.refreshAll()},o.requestAnimationFrame=function(e){var i=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||t;i.call(window,e)},o.Context=e}(),function(){"use strict";function t(t,e){return t.triggerPoint-e.triggerPoint}function e(t,e){return e.triggerPoint-t.triggerPoint}function i(t){this.name=t.name,this.axis=t.axis,this.id=this.name+"-"+this.axis,this.waypoints=[],this.clearTriggerQueues(),n[this.axis][this.name]=this}var n={vertical:{},horizontal:{}},o=window.Waypoint;i.prototype.add=function(t){this.waypoints.push(t)},i.prototype.clearTriggerQueues=function(){this.triggerQueues={up:[],down:[],left:[],right:[]}},i.prototype.flushTriggers=function(){for(var i in this.triggerQueues){var n=this.triggerQueues[i],o="up"===i||"left"===i;n.sort(o?e:t);for(var r=0,s=n.length;s>r;r+=1){var a=n[r];(a.options.continuous||r===n.length-1)&&a.trigger([i])}}this.clearTriggerQueues()},i.prototype.next=function(e){this.waypoints.sort(t);var i=o.Adapter.inArray(e,this.waypoints),n=i===this.waypoints.length-1;return n?null:this.waypoints[i+1]},i.prototype.previous=function(e){this.waypoints.sort(t);var i=o.Adapter.inArray(e,this.waypoints);return i?this.waypoints[i-1]:null},i.prototype.queueTrigger=function(t,e){this.triggerQueues[e].push(t)},i.prototype.remove=function(t){var e=o.Adapter.inArray(t,this.waypoints);e>-1&&this.waypoints.splice(e,1)},i.prototype.first=function(){return this.waypoints[0]},i.prototype.last=function(){return this.waypoints[this.waypoints.length-1]},i.findOrCreate=function(t){return n[t.axis][t.name]||new i(t)},o.Group=i}(),function(){"use strict";function t(t){this.$element=e(t)}var e=window.jQuery,i=window.Waypoint;e.each(["innerHeight","innerWidth","off","offset","on","outerHeight","outerWidth","scrollLeft","scrollTop"],function(e,i){t.prototype[i]=function(){var t=Array.prototype.slice.call(arguments);return this.$element[i].apply(this.$element,t)}}),e.each(["extend","inArray","isEmptyObject"],function(i,n){t[n]=e[n]}),i.adapters.push({name:"jquery",Adapter:t}),i.Adapter=t}(),function(){"use strict";function t(t){return function(){var i=[],n=arguments[0];return t.isFunction(arguments[0])&&(n=t.extend({},arguments[1]),n.handler=arguments[0]),this.each(function(){var o=t.extend({},n,{element:this});"string"==typeof o.context&&(o.context=t(this).closest(o.context)[0]),i.push(new e(o))}),i}}var e=window.Waypoint;window.jQuery&&(window.jQuery.fn.waypoint=t(window.jQuery)),window.Zepto&&(window.Zepto.fn.waypoint=t(window.Zepto))}(),$(".entry").each(function(t){$(this).attr("id","item_"+t);new Waypoint({element:document.getElementById("item_"+t),handler:function(t){"down"==t&&$(this.element).addClass("up")},offset:"90%"})});
+/*! lazysizes - v1.5.0-rc4 */
+!function(a,b){var c=b(a,a.document);a.lazySizes=c,"object"==typeof module&&module.exports&&(module.exports=c)}(window,function(a,b){"use strict";if(b.getElementsByClassName){var c,d=b.documentElement,e=a.HTMLPictureElement&&"sizes"in b.createElement("img"),f="addEventListener",g="getAttribute",h=a[f],i=a.setTimeout,j=a.requestAnimationFrame||i,k=/^picture$/i,l=["load","error","lazyincluded","_lazyloaded"],m={},n=Array.prototype.forEach,o=function(a,b){return m[b]||(m[b]=new RegExp("(\\s|^)"+b+"(\\s|$)")),m[b].test(a[g]("class")||"")&&m[b]},p=function(a,b){o(a,b)||a.setAttribute("class",(a[g]("class")||"").trim()+" "+b)},q=function(a,b){var c;(c=o(a,b))&&a.setAttribute("class",(a[g]("class")||"").replace(c," "))},r=function(a,b,c){var d=c?f:"removeEventListener";c&&r(a,b),l.forEach(function(c){a[d](c,b)})},s=function(a,c,d,e,f){var g=b.createEvent("CustomEvent");return g.initCustomEvent(c,!e,!f,d||{}),a.dispatchEvent(g),g},t=function(b,d){var f;!e&&(f=a.picturefill||c.pf)?f({reevaluate:!0,elements:[b]}):d&&d.src&&(b.src=d.src)},u=function(a,b){return(getComputedStyle(a,null)||{})[b]},v=function(a,b,d){for(d=d||a.offsetWidth;d<c.minSize&&b&&!a._lazysizesWidth;)d=b.offsetWidth,b=b.parentNode;return d},w=function(b){var c,d=0,e=a.Date,f=function(){c=!1,d=e.now(),b()},g=function(){i(f)},h=function(){j(g)};return function(){if(!c){var a=125-(e.now()-d);c=!0,6>a&&(a=6),i(h,a)}}},x=function(){var e,l,m,v,x,z,A,B,C,D,E,F,G,H,I,J=/^img$/i,K=/^iframe$/i,L="onscroll"in a&&!/glebot/.test(navigator.userAgent),M=0,N=0,O=0,P=0,Q=function(a){O--,a&&a.target&&r(a.target,Q),(!a||0>O||!a.target)&&(O=0)},R=function(a,c){var e,f=a,g="hidden"==u(b.body,"visibility")||"hidden"!=u(a,"visibility");for(C-=c,F+=c,D-=c,E+=c;g&&(f=f.offsetParent)&&f!=b.body&&f!=d;)g=(u(f,"opacity")||1)>0,g&&"visible"!=u(f,"overflow")&&(e=f.getBoundingClientRect(),g=E>e.left&&D<e.right&&F>e.top-1&&C<e.bottom+1);return g},S=function(){var a,b,f,h,i,j,k,n,o;if((x=c.loadMode)&&8>O&&(a=e.length)){b=0,P++,null==H&&("expand"in c||(c.expand=d.clientHeight>600?d.clientWidth>860?500:410:359),G=c.expand,H=G*c.expFactor),H>N&&1>O&&P>3&&x>2?(N=H,P=0):N=x>1&&P>2&&6>O?G:M;for(;a>b;b++)if(e[b]&&!e[b]._lazyRace)if(L)if((n=e[b][g]("data-expand"))&&(j=1*n)||(j=N),o!==j&&(A=innerWidth+j*I,B=innerHeight+j,k=-1*j,o=j),f=e[b].getBoundingClientRect(),(F=f.bottom)>=k&&(C=f.top)<=B&&(E=f.right)>=k*I&&(D=f.left)<=A&&(F||E||D||C)&&(m&&3>O&&!n&&(3>x||4>P)||R(e[b],j))){if(Z(e[b]),i=!0,O>9)break}else!i&&m&&!h&&4>O&&4>P&&x>2&&(l[0]||c.preloadAfterLoad)&&(l[0]||!n&&(F||E||D||C||"auto"!=e[b][g](c.sizesAttr)))&&(h=l[0]||e[b]);else Z(e[b]);h&&!i&&Z(h)}},T=w(S),U=function(a){p(a.target,c.loadedClass),q(a.target,c.loadingClass),r(a.target,V)},V=function(a){a={target:a.target},j(function(){U(a)})},W=function(a,b){try{a.contentWindow.location.replace(b)}catch(c){a.src=b}},X=function(a){var b,d,e=a[g](c.srcsetAttr);(b=c.customMedia[a[g]("data-media")||a[g]("media")])&&a.setAttribute("media",b),e&&a.setAttribute("srcset",e),b&&(d=a.parentNode,d.insertBefore(a.cloneNode(),a),d.removeChild(a))},Y=function(){var a,b=[],c=function(){for(;b.length;)b.shift()();a=!1},d=function(d){b.push(d),a||(a=!0,j(c))};return{add:d,run:c}}(),Z=function(a){var b,d,e,f,h,l,u,w=J.test(a.nodeName),x=w&&(a[g](c.sizesAttr)||a[g]("sizes")),z="auto"==x;(!z&&m||!w||!a.src&&!a.srcset||a.complete||o(a,c.errorClass))&&(z&&(u=a.offsetWidth),a._lazyRace=!0,O++,c.rC&&(u=c.rC(a,u)||u),Y.add(function(){(h=s(a,"lazybeforeunveil")).defaultPrevented||(x&&(z?(y.updateElem(a,!0,u),p(a,c.autosizesClass)):a.setAttribute("sizes",x)),d=a[g](c.srcsetAttr),b=a[g](c.srcAttr),w&&(e=a.parentNode,f=e&&k.test(e.nodeName||"")),l=h.detail.firesLoad||"src"in a&&(d||b||f),h={target:a},l&&(r(a,Q,!0),clearTimeout(v),v=i(Q,2500),p(a,c.loadingClass),r(a,V,!0)),f&&n.call(e.getElementsByTagName("source"),X),d?a.setAttribute("srcset",d):b&&!f&&(K.test(a.nodeName)?W(a,b):a.src=b),(d||f)&&t(a,{src:b})),j(function(){a._lazyRace&&delete a._lazyRace,q(a,c.lazyClass),(!l||a.complete)&&(l?Q(h):O--,U(h))})}))},$=function(){if(!m){if(Date.now()-z<999)return void i($,999);var a,d=function(){c.loadMode=3,T()};m=!0,c.loadMode=3,b.hidden?(S(),Y.run()):T(),h("scroll",function(){3==c.loadMode&&(c.loadMode=2),clearTimeout(a),a=i(d,99)},!0)}};return{_:function(){z=Date.now(),e=b.getElementsByClassName(c.lazyClass),l=b.getElementsByClassName(c.lazyClass+" "+c.preloadClass),I=c.hFac,h("scroll",T,!0),h("resize",T,!0),a.MutationObserver?new MutationObserver(T).observe(d,{childList:!0,subtree:!0,attributes:!0}):(d[f]("DOMNodeInserted",T,!0),d[f]("DOMAttrModified",T,!0),setInterval(T,999)),h("hashchange",T,!0),["focus","mouseover","click","load","transitionend","animationend","webkitAnimationEnd"].forEach(function(a){b[f](a,T,!0)}),/d$|^c/.test(b.readyState)?$():(h("load",$),b[f]("DOMContentLoaded",T),i($,2e4)),T(e.length>0)},checkElems:T,unveil:Z}}(),y=function(){var a,d=function(a,b,c){var d,e,f,g,h=a.parentNode;if(h&&(c=v(a,h,c),g=s(a,"lazybeforesizes",{width:c,dataAttr:!!b}),!g.defaultPrevented&&(c=g.detail.width,c&&c!==a._lazysizesWidth))){if(a._lazysizesWidth=c,c+="px",a.setAttribute("sizes",c),k.test(h.nodeName||""))for(d=h.getElementsByTagName("source"),e=0,f=d.length;f>e;e++)d[e].setAttribute("sizes",c);g.detail.dataAttr||t(a,g.detail)}},e=function(){var b,c=a.length;if(c)for(b=0;c>b;b++)d(a[b])},f=w(e);return{_:function(){a=b.getElementsByClassName(c.autosizesClass),h("resize",f)},checkElems:f,updateElem:d}}(),z=function(){z.i||(z.i=!0,y._(),x._())};return function(){var b,d={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.7,hFac:.8,loadMode:2};c=a.lazySizesConfig||a.lazysizesConfig||{};for(b in d)b in c||(c[b]=d[b]);a.lazySizesConfig=c,i(function(){c.init&&z()})}(),{cfg:c,autoSizer:y,loader:x,init:z,uP:t,aC:p,rC:q,hC:o,fire:s,gW:v}}});
+
+// Just checking if we're dealing with Safari, as the back-key in the browser breaks page transitions
+is_safari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)
+
+// Just checking if we're deadling with Firefox, for the reasons above
+is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+// Prevents the page from fading out when the command-key is clicked on Macs
+var control = false;
+$(document).on('keyup keydown', function(e) {
+  control = e.metaKey;
+});
+
+// Fade the page out when the user clicks a link with the "shift"-class. Smoother page transitions
+$('.shift').on('click', function() {
+  if (control || is_safari || is_firefox) {
+    // Do nothing!
+  } else {
+    // We will add the animate-class on click as the initial load will look odd if it's on by default.
+    $('body').addClass('animate').css('opacity', 0);
+  }
+});
+
+// Waypoints
+// Detects where the user is on the page and adds a class to elements in view – for us that means fading elements in and up into view.
+// Like the header text or pull-quotes.
+(function() {
+  'use strict'
+
+  var keyCounter = 0
+  var allWaypoints = {}
+
+  /* http://imakewebthings.com/waypoints/api/waypoint */
+  function Waypoint(options) {
+    if (!options) {
+      throw new Error('No options passed to Waypoint constructor')
+    }
+    if (!options.element) {
+      throw new Error('No element option passed to Waypoint constructor')
+    }
+    if (!options.handler) {
+      throw new Error('No handler option passed to Waypoint constructor')
+    }
+
+    this.key = 'waypoint-' + keyCounter
+    this.options = Waypoint.Adapter.extend({}, Waypoint.defaults, options)
+    this.element = this.options.element
+    this.adapter = new Waypoint.Adapter(this.element)
+    this.callback = options.handler
+    this.axis = this.options.horizontal ? 'horizontal' : 'vertical'
+    this.enabled = this.options.enabled
+    this.triggerPoint = null
+    this.group = Waypoint.Group.findOrCreate({
+      name: this.options.group,
+      axis: this.axis
+    })
+    this.context = Waypoint.Context.findOrCreateByElement(this.options.context)
+
+    if (Waypoint.offsetAliases[this.options.offset]) {
+      this.options.offset = Waypoint.offsetAliases[this.options.offset]
+    }
+    this.group.add(this)
+    this.context.add(this)
+    allWaypoints[this.key] = this
+    keyCounter += 1
+  }
+
+  /* Private */
+  Waypoint.prototype.queueTrigger = function(direction) {
+    this.group.queueTrigger(this, direction)
+  }
+
+  /* Private */
+  Waypoint.prototype.trigger = function(args) {
+    if (!this.enabled) {
+      return
+    }
+    if (this.callback) {
+      this.callback.apply(this, args)
+    }
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/destroy */
+  Waypoint.prototype.destroy = function() {
+    this.context.remove(this)
+    this.group.remove(this)
+    delete allWaypoints[this.key]
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/disable */
+  Waypoint.prototype.disable = function() {
+    this.enabled = false
+    return this
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/enable */
+  Waypoint.prototype.enable = function() {
+    this.context.refresh()
+    this.enabled = true
+    return this
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/next */
+  Waypoint.prototype.next = function() {
+    return this.group.next(this)
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/previous */
+  Waypoint.prototype.previous = function() {
+    return this.group.previous(this)
+  }
+
+  /* Private */
+  Waypoint.invokeAll = function(method) {
+    var allWaypointsArray = []
+    for (var waypointKey in allWaypoints) {
+      allWaypointsArray.push(allWaypoints[waypointKey])
+    }
+    for (var i = 0, end = allWaypointsArray.length; i < end; i++) {
+      allWaypointsArray[i][method]()
+    }
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/destroy-all */
+  Waypoint.destroyAll = function() {
+    Waypoint.invokeAll('destroy')
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/disable-all */
+  Waypoint.disableAll = function() {
+    Waypoint.invokeAll('disable')
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/enable-all */
+  Waypoint.enableAll = function() {
+    Waypoint.invokeAll('enable')
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/refresh-all */
+  Waypoint.refreshAll = function() {
+    Waypoint.Context.refreshAll()
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/viewport-height */
+  Waypoint.viewportHeight = function() {
+    return window.innerHeight || document.documentElement.clientHeight
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/viewport-width */
+  Waypoint.viewportWidth = function() {
+    return document.documentElement.clientWidth
+  }
+
+  Waypoint.adapters = []
+
+  Waypoint.defaults = {
+    context: window,
+    continuous: true,
+    enabled: true,
+    group: 'default',
+    horizontal: false,
+    offset: 0
+  }
+
+  Waypoint.offsetAliases = {
+    'bottom-in-view': function() {
+      return this.context.innerHeight() - this.adapter.outerHeight()
+    },
+    'right-in-view': function() {
+      return this.context.innerWidth() - this.adapter.outerWidth()
+    }
+  }
+
+  window.Waypoint = Waypoint
+}())
+;(function() {
+  'use strict'
+
+  function requestAnimationFrameShim(callback) {
+    window.setTimeout(callback, 1000 / 60)
+  }
+
+  var keyCounter = 0
+  var contexts = {}
+  var Waypoint = window.Waypoint
+  var oldWindowLoad = window.onload
+
+  /* http://imakewebthings.com/waypoints/api/context */
+  function Context(element) {
+    this.element = element
+    this.Adapter = Waypoint.Adapter
+    this.adapter = new this.Adapter(element)
+    this.key = 'waypoint-context-' + keyCounter
+    this.didScroll = false
+    this.didResize = false
+    this.oldScroll = {
+      x: this.adapter.scrollLeft(),
+      y: this.adapter.scrollTop()
+    }
+    this.waypoints = {
+      vertical: {},
+      horizontal: {}
+    }
+
+    element.waypointContextKey = this.key
+    contexts[element.waypointContextKey] = this
+    keyCounter += 1
+
+    this.createThrottledScrollHandler()
+    this.createThrottledResizeHandler()
+  }
+
+  /* Private */
+  Context.prototype.add = function(waypoint) {
+    var axis = waypoint.options.horizontal ? 'horizontal' : 'vertical'
+    this.waypoints[axis][waypoint.key] = waypoint
+    this.refresh()
+  }
+
+  /* Private */
+  Context.prototype.checkEmpty = function() {
+    var horizontalEmpty = this.Adapter.isEmptyObject(this.waypoints.horizontal)
+    var verticalEmpty = this.Adapter.isEmptyObject(this.waypoints.vertical)
+    if (horizontalEmpty && verticalEmpty) {
+      this.adapter.off('.waypoints')
+      delete contexts[this.key]
+    }
+  }
+
+  /* Private */
+  Context.prototype.createThrottledResizeHandler = function() {
+    var self = this
+
+    function resizeHandler() {
+      self.handleResize()
+      self.didResize = false
+    }
+
+    this.adapter.on('resize.waypoints', function() {
+      if (!self.didResize) {
+        self.didResize = true
+        Waypoint.requestAnimationFrame(resizeHandler)
+      }
+    })
+  }
+
+  /* Private */
+  Context.prototype.createThrottledScrollHandler = function() {
+    var self = this
+    function scrollHandler() {
+      self.handleScroll()
+      self.didScroll = false
+    }
+
+    this.adapter.on('scroll.waypoints', function() {
+      if (!self.didScroll || Waypoint.isTouch) {
+        self.didScroll = true
+        Waypoint.requestAnimationFrame(scrollHandler)
+      }
+    })
+  }
+
+  /* Private */
+  Context.prototype.handleResize = function() {
+    Waypoint.Context.refreshAll()
+  }
+
+  /* Private */
+  Context.prototype.handleScroll = function() {
+    var triggeredGroups = {}
+    var axes = {
+      horizontal: {
+        newScroll: this.adapter.scrollLeft(),
+        oldScroll: this.oldScroll.x,
+        forward: 'right',
+        backward: 'left'
+      },
+      vertical: {
+        newScroll: this.adapter.scrollTop(),
+        oldScroll: this.oldScroll.y,
+        forward: 'down',
+        backward: 'up'
+      }
+    }
+
+    for (var axisKey in axes) {
+      var axis = axes[axisKey]
+      var isForward = axis.newScroll > axis.oldScroll
+      var direction = isForward ? axis.forward : axis.backward
+
+      for (var waypointKey in this.waypoints[axisKey]) {
+        var waypoint = this.waypoints[axisKey][waypointKey]
+        var wasBeforeTriggerPoint = axis.oldScroll < waypoint.triggerPoint
+        var nowAfterTriggerPoint = axis.newScroll >= waypoint.triggerPoint
+        var crossedForward = wasBeforeTriggerPoint && nowAfterTriggerPoint
+        var crossedBackward = !wasBeforeTriggerPoint && !nowAfterTriggerPoint
+        if (crossedForward || crossedBackward) {
+          waypoint.queueTrigger(direction)
+          triggeredGroups[waypoint.group.id] = waypoint.group
+        }
+      }
+    }
+
+    for (var groupKey in triggeredGroups) {
+      triggeredGroups[groupKey].flushTriggers()
+    }
+
+    this.oldScroll = {
+      x: axes.horizontal.newScroll,
+      y: axes.vertical.newScroll
+    }
+  }
+
+  /* Private */
+  Context.prototype.innerHeight = function() {
+    /*eslint-disable eqeqeq */
+    if (this.element == this.element.window) {
+      return Waypoint.viewportHeight()
+    }
+    /*eslint-enable eqeqeq */
+    return this.adapter.innerHeight()
+  }
+
+  /* Private */
+  Context.prototype.remove = function(waypoint) {
+    delete this.waypoints[waypoint.axis][waypoint.key]
+    this.checkEmpty()
+  }
+
+  /* Private */
+  Context.prototype.innerWidth = function() {
+    /*eslint-disable eqeqeq */
+    if (this.element == this.element.window) {
+      return Waypoint.viewportWidth()
+    }
+    /*eslint-enable eqeqeq */
+    return this.adapter.innerWidth()
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/context-destroy */
+  Context.prototype.destroy = function() {
+    var allWaypoints = []
+    for (var axis in this.waypoints) {
+      for (var waypointKey in this.waypoints[axis]) {
+        allWaypoints.push(this.waypoints[axis][waypointKey])
+      }
+    }
+    for (var i = 0, end = allWaypoints.length; i < end; i++) {
+      allWaypoints[i].destroy()
+    }
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/context-refresh */
+  Context.prototype.refresh = function() {
+    /*eslint-disable eqeqeq */
+    var isWindow = this.element == this.element.window
+    /*eslint-enable eqeqeq */
+    var contextOffset = this.adapter.offset()
+    var triggeredGroups = {}
+    var axes
+
+    this.handleScroll()
+    axes = {
+      horizontal: {
+        contextOffset: isWindow ? 0 : contextOffset.left,
+        contextScroll: isWindow ? 0 : this.oldScroll.x,
+        contextDimension: this.innerWidth(),
+        oldScroll: this.oldScroll.x,
+        forward: 'right',
+        backward: 'left',
+        offsetProp: 'left'
+      },
+      vertical: {
+        contextOffset: isWindow ? 0 : contextOffset.top,
+        contextScroll: isWindow ? 0 : this.oldScroll.y,
+        contextDimension: this.innerHeight(),
+        oldScroll: this.oldScroll.y,
+        forward: 'down',
+        backward: 'up',
+        offsetProp: 'top'
+      }
+    }
+
+    for (var axisKey in axes) {
+      var axis = axes[axisKey]
+      for (var waypointKey in this.waypoints[axisKey]) {
+        var waypoint = this.waypoints[axisKey][waypointKey]
+        var adjustment = waypoint.options.offset
+        var oldTriggerPoint = waypoint.triggerPoint
+        var elementOffset = 0
+        var freshWaypoint = oldTriggerPoint == null
+        var contextModifier, wasBeforeScroll, nowAfterScroll
+        var triggeredBackward, triggeredForward
+
+        if (waypoint.element !== waypoint.element.window) {
+          elementOffset = waypoint.adapter.offset()[axis.offsetProp]
+        }
+
+        if (typeof adjustment === 'function') {
+          adjustment = adjustment.apply(waypoint)
+        }
+        else if (typeof adjustment === 'string') {
+          adjustment = parseFloat(adjustment)
+          if (waypoint.options.offset.indexOf('%') > - 1) {
+            adjustment = Math.ceil(axis.contextDimension * adjustment / 100)
+          }
+        }
+
+        contextModifier = axis.contextScroll - axis.contextOffset
+        waypoint.triggerPoint = elementOffset + contextModifier - adjustment
+        wasBeforeScroll = oldTriggerPoint < axis.oldScroll
+        nowAfterScroll = waypoint.triggerPoint >= axis.oldScroll
+        triggeredBackward = wasBeforeScroll && nowAfterScroll
+        triggeredForward = !wasBeforeScroll && !nowAfterScroll
+
+        if (!freshWaypoint && triggeredBackward) {
+          waypoint.queueTrigger(axis.backward)
+          triggeredGroups[waypoint.group.id] = waypoint.group
+        }
+        else if (!freshWaypoint && triggeredForward) {
+          waypoint.queueTrigger(axis.forward)
+          triggeredGroups[waypoint.group.id] = waypoint.group
+        }
+        else if (freshWaypoint && axis.oldScroll >= waypoint.triggerPoint) {
+          waypoint.queueTrigger(axis.forward)
+          triggeredGroups[waypoint.group.id] = waypoint.group
+        }
+      }
+    }
+
+    for (var groupKey in triggeredGroups) {
+      triggeredGroups[groupKey].flushTriggers()
+    }
+
+    return this
+  }
+
+  /* Private */
+  Context.findOrCreateByElement = function(element) {
+    return Context.findByElement(element) || new Context(element)
+  }
+
+  /* Private */
+  Context.refreshAll = function() {
+    for (var contextId in contexts) {
+      contexts[contextId].refresh()
+    }
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/context-find-by-element */
+  Context.findByElement = function(element) {
+    return contexts[element.waypointContextKey]
+  }
+
+  window.onload = function() {
+    if (oldWindowLoad) {
+      oldWindowLoad()
+    }
+    Context.refreshAll()
+  }
+
+  Waypoint.requestAnimationFrame = function(callback) {
+    var requestFn = window.requestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      requestAnimationFrameShim
+    requestFn.call(window, callback)
+  }
+  Waypoint.Context = Context
+}())
+;(function() {
+  'use strict'
+
+  function byTriggerPoint(a, b) {
+    return a.triggerPoint - b.triggerPoint
+  }
+
+  function byReverseTriggerPoint(a, b) {
+    return b.triggerPoint - a.triggerPoint
+  }
+
+  var groups = {
+    vertical: {},
+    horizontal: {}
+  }
+  var Waypoint = window.Waypoint
+
+  /* http://imakewebthings.com/waypoints/api/group */
+  function Group(options) {
+    this.name = options.name
+    this.axis = options.axis
+    this.id = this.name + '-' + this.axis
+    this.waypoints = []
+    this.clearTriggerQueues()
+    groups[this.axis][this.name] = this
+  }
+
+  /* Private */
+  Group.prototype.add = function(waypoint) {
+    this.waypoints.push(waypoint)
+  }
+
+  /* Private */
+  Group.prototype.clearTriggerQueues = function() {
+    this.triggerQueues = {
+      up: [],
+      down: [],
+      left: [],
+      right: []
+    }
+  }
+
+  /* Private */
+  Group.prototype.flushTriggers = function() {
+    for (var direction in this.triggerQueues) {
+      var waypoints = this.triggerQueues[direction]
+      var reverse = direction === 'up' || direction === 'left'
+      waypoints.sort(reverse ? byReverseTriggerPoint : byTriggerPoint)
+      for (var i = 0, end = waypoints.length; i < end; i += 1) {
+        var waypoint = waypoints[i]
+        if (waypoint.options.continuous || i === waypoints.length - 1) {
+          waypoint.trigger([direction])
+        }
+      }
+    }
+    this.clearTriggerQueues()
+  }
+
+  /* Private */
+  Group.prototype.next = function(waypoint) {
+    this.waypoints.sort(byTriggerPoint)
+    var index = Waypoint.Adapter.inArray(waypoint, this.waypoints)
+    var isLast = index === this.waypoints.length - 1
+    return isLast ? null : this.waypoints[index + 1]
+  }
+
+  /* Private */
+  Group.prototype.previous = function(waypoint) {
+    this.waypoints.sort(byTriggerPoint)
+    var index = Waypoint.Adapter.inArray(waypoint, this.waypoints)
+    return index ? this.waypoints[index - 1] : null
+  }
+
+  /* Private */
+  Group.prototype.queueTrigger = function(waypoint, direction) {
+    this.triggerQueues[direction].push(waypoint)
+  }
+
+  /* Private */
+  Group.prototype.remove = function(waypoint) {
+    var index = Waypoint.Adapter.inArray(waypoint, this.waypoints)
+    if (index > -1) {
+      this.waypoints.splice(index, 1)
+    }
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/first */
+  Group.prototype.first = function() {
+    return this.waypoints[0]
+  }
+
+  /* Public */
+  /* http://imakewebthings.com/waypoints/api/last */
+  Group.prototype.last = function() {
+    return this.waypoints[this.waypoints.length - 1]
+  }
+
+  /* Private */
+  Group.findOrCreate = function(options) {
+    return groups[options.axis][options.name] || new Group(options)
+  }
+
+  Waypoint.Group = Group
+}())
+;(function() {
+  'use strict'
+
+  var $ = window.jQuery
+  var Waypoint = window.Waypoint
+
+  function JQueryAdapter(element) {
+    this.$element = $(element)
+  }
+
+  $.each([
+    'innerHeight',
+    'innerWidth',
+    'off',
+    'offset',
+    'on',
+    'outerHeight',
+    'outerWidth',
+    'scrollLeft',
+    'scrollTop'
+  ], function(i, method) {
+    JQueryAdapter.prototype[method] = function() {
+      var args = Array.prototype.slice.call(arguments)
+      return this.$element[method].apply(this.$element, args)
+    }
+  })
+
+  $.each([
+    'extend',
+    'inArray',
+    'isEmptyObject'
+  ], function(i, method) {
+    JQueryAdapter[method] = $[method]
+  })
+
+  Waypoint.adapters.push({
+    name: 'jquery',
+    Adapter: JQueryAdapter
+  })
+  Waypoint.Adapter = JQueryAdapter
+}())
+;(function() {
+  'use strict'
+
+  var Waypoint = window.Waypoint
+
+  function createExtension(framework) {
+    return function() {
+      var waypoints = []
+      var overrides = arguments[0]
+
+      if (framework.isFunction(arguments[0])) {
+        overrides = framework.extend({}, arguments[1])
+        overrides.handler = arguments[0]
+      }
+
+      this.each(function() {
+        var options = framework.extend({}, overrides, {
+          element: this
+        })
+        if (typeof options.context === 'string') {
+          options.context = framework(this).closest(options.context)[0]
+        }
+        waypoints.push(new Waypoint(options))
+      })
+
+      return waypoints
+    }
+  }
+
+  if (window.jQuery) {
+    window.jQuery.fn.waypoint = createExtension(window.jQuery)
+  }
+  if (window.Zepto) {
+    window.Zepto.fn.waypoint = createExtension(window.Zepto)
+  }
+}())
+;
+
+
+// For each entry point
+$(".entry").each(function(index){
+$(this).attr('id','item_'+index);
+	var waypoint = new Waypoint({
+		element: document.getElementById('item_'+index),
+      handler: function(direction) {
+		if(direction == 'down') {
+			// console.log(this.element.id + ' triggers at ' + this.triggerPoint)
+			$(this.element).addClass('up');
+			}
+		},
+    // When the 'entry'-class is 10% from the bottom of the viewport
+		offset: '90%'
+	});
+});
+
+// Custom message for the curious who explore the console log :)
+// console.log("Even after 400 generations in villages and cities, we haven't forgotten. The open road still softly calls, like a nearly forgotten song of childhood. We invest far-off places with a certain romance. This appeal, I suspect, has been meticulously crafted by natural selection as an essential element in our survival. Long summers, mild winters, rich harvests, plentiful game—none of them lasts forever.\n\nIt is beyond our powers to predict the future. Catastrophic events have a way of sneaking up on us, of catching us unaware. Your own life, or your band's, or even your species' might be owed to a restless few—drawn, by a craving they can hardly articulate or understand, to undiscovered lands and new worlds.\n\nHerman Melville, in Moby Dick, spoke for wanderers in all epochs and meridians – 'I am tormented with an everlasting itch for things remote. I love to sail forbidden seas...'\n\n– Carl Sagan");

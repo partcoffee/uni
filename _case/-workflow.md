@@ -63,6 +63,8 @@ As an addition to the previously mentioned <a href="/workflow-and-sketchbook/#in
 
 I also mentioned architecture on the front-page, which has become a calming source of inspiration and peace for me. Individuals like Arne Jacobsen and the modern Japanese/Scandinavian architectural landscape comes to mind, and I even made a secret board on Pinterest to keep everything in one place. I made it <a href="https://no.pinterest.com/magnusskare/architecture-interior/" target="_blank">temporarily public</a> for your convenience.
 
+Another noteworthy piece of literature outside the online world would be Paul Rand's <a href="http://www.amazon.com/Paul-Rand-Conversations-Michael-Kroeger/dp/1568987250" target="_blank">Conversations with Students</a>. The book is tiny and merely an hour of your time, but made me think of design quite differently. Definitely recommended for anyone on the Digital Media course.
+
 <div class="div"></div>
 
 ## Teaching

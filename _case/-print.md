@@ -119,8 +119,11 @@ After writing all my text and shooting all the necessary pictures, I had to asse
 		</div>
 	</div>
 
-	<div class="contain">
-		<img src="/../img/final/printed10-lq.jpg" data-src="/../img/final/printed10.jpg" alt="My university portfolio" class="fade wait lazy lazyload">
+	<div class="caption mid">
+		<div class="contain">
+			<img src="/../img/final/printed10-lq.jpg" data-src="/../img/final/printed10.jpg" alt="My university portfolio" class="fade wait lazy lazyload">
+		</div>
+		<span>Here's a look at <a href="/../img/final/shoot.jpg" target="_blank">the setup</a>, using the backside of my Macbook as a reflector.</span>
 	</div>
 </div>
 

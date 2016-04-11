@@ -658,7 +658,7 @@ ul, li {
 }
 
 .final .printed-thing {
-	.contain, .final-grid {
+	.contain, .final-grid, .caption {
 		margin: 15px auto;
 
 		@media (min-width: $break) {
