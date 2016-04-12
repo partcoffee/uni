@@ -91,7 +91,7 @@ YouTube videos are loaded in a similar way, but without a tiny placeholder-image
 
 <div class="div"></div>
 
-The site is still powered by Jekyll and compiled locally before being pushed to a live server. This is so we don't have to compress our assets on the fly, but rather do all the hard lifting ourselves – so the server don't have to. This should give us the same performance budget as before, but with lazy loading, I expect articles to load a fair amount quicker.
+The site is still powered by Jekyll and compiled locally before being pushed to a live server. This is so we don't have to compress our assets on the fly, but rather do all the hard lifting ourselves – so the server don't have to. This should give us the same performance budget as before, but with lazy loading, I expect articles to load a fair amount quicker. I also paid close attention to clean and semantic markup, allowing for a great experience for users who prefer <a href="https://support.apple.com/kb/PH21467?locale=en_US" target="_blank">Safari Reader</a>.
 
 On the topic of maintainability and technology, I would like to refer you to what I have <a href="/portfolio/#maintainability--technology">already covered</a> to avoid too much repetition. The noteworthy change would be how I handle projects now. The end of my second semester will be the end of this website – or it's purpose, and as I do not intend to scale it any further, the <a href="/final">new homepage</a> is largely tailored with little care for scalability. This is intentional, but something I could have improved given more time or intentions of further developing the site.
 
