@@ -139,7 +139,7 @@ I had a goal of improving the performance of my case studies. The previous site 
 
 From this we can clearly see the benefits of lazy-loading, as the site is initially loading almost a second (0.946s) faster even though our main CSS and JavaScript files are bigger. Our repeat view suffers as the JavaScript will still have to replace the low-res image, even though it's cached, but our CSS animations help even this out – making the additional 5th of a second hard to notice.
 
-We should ideally stay within 1.5 seconds for articles, but I think a reasonable budget would be ~2 seconds. This is not always possible, especially for longer articles, but it's a goal worth aiming for.
+We should ideally stay within 1.5 seconds for articles, but I think a reasonable budget would be ~2 seconds. This is not always possible, especially for longer articles, but it's a goal worth aiming for. I've also implemented a fading animation between pages, which should give the illusion of almost instant page-loads – the same principle is used by Apple for animating the opening and closing of applications on their iOS devices. Ideally, you should never feel like you are waiting for a page to load.
 
 The site is available on <a href="https://github.com/partcoffee/uni" target="_blank">GitHub</a>, and I'd pay close attention to the <a href="https://github.com/partcoffee/uni/commits/master" target="_blank">latest commits</a>, as it should clearly highlight changes in files. I would also disregard the changes in the _site folder, as it is minified and probably not readable. Everything else, however, is worth inspecting.
 
