@@ -149,6 +149,8 @@ The site is available on <a href="https://github.com/partcoffee/uni" target="_bl
 
 I'm very pleased with the final outcome, and I believe it represents a fair portion of what I'm currently able to do with web technologies. I had fun making it and I believe it is able to show the vast majority of the work I have completed this semester, in a reflective and clear manner.
 
-If I were to continue this project, I would probably adopt a better naming convention for my styles, and if it should ever receive a broader audience than my lecturers, I would have to adapt to that as well.
+If I were to continue this project, I would probably adopt a better naming convention for my styles, and if it should ever receive a broader audience than my lecturers, I would have to adapt to that as well. I would also pick up a better way to deliver images; not only through a CDN, but also through <a href="http://caniuse.com/#feat=srcset" target="_blank">srcset</a> for a better mobile experience.
+
+Lastly, I have been debating the use of <a href="https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.qf993kvk9" target="_blank">system fonts</a> for better performance as modern devices do ship with a brilliant set of fonts (Roboto on on Android, San Francisco on iOS and OSX, and Segoe UI on Windows) – but for my particular use case, I'm very pleased with how it turned out.
 
 <div class="div"></div>
