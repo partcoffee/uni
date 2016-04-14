@@ -47,6 +47,8 @@ This is essentially to make each case study more approachable, avoiding adnormal
 
 > The same goes for the case studies, and I had to request a fair amount of feedback before landing on the selected few that made it into the final article, printed portfolio and digital portfolio. The only drawback is that while final outcome may be better, it may be harder to see the actual amount of work.
 
+> Some of the shots below were simply not good enough to be used for anything in my opinion, but I believe their existence should be acknowledged anyway.
+
 <div class="div"></div>
 
 {::nomarkdown}
@@ -88,15 +90,6 @@ This is essentially to make each case study more approachable, avoiding adnormal
 {::nomarkdown}
 <div class="contain">
 	<img src="/../img/bit/07-lq.jpg" data-src="/../img/bit/07.jpg" alt="Image" class="lazyload lazy">
-</div>
-{:/}
-
-{::nomarkdown}
-<div class="caption mid">
-	<div class="contain">
-		<img src="/../img/bit/mockup-lq.jpg" data-src="/../img/bit/mockup.jpg" alt="Image" class="lazyload lazy">
-	</div>
-	<span>Launch mockup of <a href="http://promethevs.no/" target="_blank">Promethevs</a>. Photo: Mockup</span>
 </div>
 {:/}
 

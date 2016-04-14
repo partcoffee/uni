@@ -68,6 +68,32 @@ blockquote {
 	}
 }
 
+.co {
+	p {
+		text-align: left;
+	}
+
+	p:first-of-type {
+		font-size: 14px;
+		position: relative;
+
+		@media (min-width: $break) {
+			font-size: 15px;
+		}
+
+		&:before {
+			content: '“';
+			font-family: $secondary;
+			font-size: 60px;
+			position: absolute;
+			top: -50px;
+			color: $light;
+			opacity: .5;
+			left: -40px;
+		}
+	}
+}
+
 hr {
 	border: 0;
 	width: 100%;

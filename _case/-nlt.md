@@ -115,7 +115,7 @@ We also wanted to offer logged in users the option to **order in bulk** – whic
 
 <div class="caption mid">
 	<div class="contain">
-		<img src="/../img/final/heymatw-lq.jpg" data-src="/../img/final/heymatw.jpg" alt="Heymat" class="lazy lazyload">
+		<img src="/../img/final/0heymat-lq.jpg" data-src="/../img/final/0heymat.jpg" alt="Heymat" class="lazy lazyload">
 	</div>
 	<span><a href="http://heymat.no/" target="_blank">Heymat.no</a></span>
 </div>
@@ -126,21 +126,58 @@ I made two short videos to give you a tour of the secondary site for resellers. 
 
 We launched Heymat early February, in its most basic state; a working web shop with PayPal as the only payment solution. All of the above have been integrated at a later stage, which certainly would have been easier to add initially, but was not requested until later.
 
+I worked closely with the entire team, but most notably with Cathrine, a senior graphic designer on our team:
+
+<div class="div"></div>
+
+<blockquote class="entry co">
+	<p>I have worked with Magnus on many different projects here at Riktig Spor. The most comprehensive web project has been for our client Heymat. This project included a Wordpress ecommerce shop in Norwegian and English, with a separate shop for Heymat’s dealers. It was a challenging job, and coincidentally the first web shop ever developed at Riktig Spor. We worked as a team with the initial setup, and Magnus fixed all the problems we ran into quickly and carefully. The dealer shop had to be tailored, and Magnus designed a solution that is clever, intuitive and looks great.<br><br>Over all, it is great to work with Magnus. His smart solutions, and good eye for design is a great combination that we really need at Riktig Spor.</p>
+	<p>Cathrine, Senior Graphic Designer</p>
+</blockquote>
+
 <div class="div"></div>
 
 ## Projects worth mentioning
 
-If you have seen my <a href="/final/workflow-and-conclusion/" target="_blank">workflow article</a>, you have probably seen several Slack channels for different projects, and I thought it'd be worth mention them here as well, as they dramatically extended the 300 hour estimate for this particular module. They weren't as noteworthy as Heymat, as I merely developed sites inside my comfort-zone, but I believe they are worth highlighting anyway.
+If you have seen my <a href="/final/workflow-and-conclusion/" target="_blank">workflow article</a>, you have probably seen several Slack channels for different projects, and I thought it'd be worth mention them here as well, as they dramatically extended the 300 hour estimate for this particular module. They weren't as noteworthy as Heymat, as I merely developed sites and worked from inside my comfort-zone, but I believe they are worth highlighting.
 
-**The most recently launched website would be Promethevs**. <a href="http://promethevs.no/" target="_blank">Promethevs</a> is a company on leadership development, with large scale clients from all over the country – from banks to large corporations. The site is based on a template, but essentially <a href="https://www.instagram.com/p/BCiGWQ1MPkx/" target="_blank">designed by us</a>.
+<div class="div"></div>
 
-The development was fairly straight forward, but they required a few custom tweaks. For instance, the <a href="http://promethevs.no/om-oss" target="_blank">about-page</a> had to display videos in a clever and non obtrusive way. This was achieved through custom JavaScript on this particular page, to show and play a embedded YouTube video for each person on the page. We also developed a way to <a href="http://promethevs.no/nyhetsbrev" target="_blank">show archived newsletters</a> on the site.
+{::nomarkdown}
+<div class="caption mid">
+	<div class="contain">
+		<img src="/../img/bit/mockup-lq.jpg" data-src="/../img/bit/mockup.jpg" alt="Promethevs" class="lazy lazyload">
+	</div>
+	<span>New website for <a href="http://promethevs.no" target="_blank">Promethevs</a></span>
+</div>
+{:/}
 
-**I am currently working on a site for Utværet Lånan**, which may or may not be live now. The site is also hosted on a <a href="http://46.101.94.163/" target="_blank">development server</a>, but this is subject to change so it may not be accessible. The old site (unless we have launched it), can be found at <a href="http://lanan.no" target="_blank">www.lanan.no</a>.
+<div class="div"></div>
 
-**I also wrote some articles** in my spare time, which we published on our agency website. One of them wanted to teach people how to <a href="http://riktigspor.no/hvordan-google-bedre/" target="_blank">become better at Google</a>, whereas the other one merely wanted to highlight <a href="http://riktigspor.no/administrer-flere-kontoer-pa-instagram/" target="_blank">a new Instagram feature</a>.
+**The most recently launched website would be Promethevs**. <a href="http://promethevs.no/" target="_blank">Promethevs</a> is a company on leadership development, with large scale clients from all over the country – from banks to large corporations. The site is based on a template, but essentially <a href="https://www.instagram.com/p/BCiGWQ1MPkx/" target="_blank">designed by us</a>, along with business cards and style.
 
-I would also like to reference the <a href="/riktigspor#words-from-the-general-manager">feedback</a> received from my work placement, which I still find flattering.
+The development was fairly straight forward, but they required a few custom tweaks. For instance, the <a href="http://promethevs.no/om-oss" target="_blank">about-page</a> had to display videos in a clever and non-obtrusive way. This was achieved through custom JavaScript on this particular page, to show and play a embedded YouTube video for each person on the page. We also developed a way to <a href="http://promethevs.no/nyhetsbrev" target="_blank">show archived newsletters</a> on the site.
+
+<p class="pull pull-left"><strong>Bodø 2016 is celebrating Bodø's 200th anniversary</strong>, and we are a part of designing some products for the committee behind it all to sell. My role was limited to consultation and product photography. I have included two shots below, which were both later used for ads and posters. The picture is published with permission from the family.<span>Read more about <a href="http://riktigspor.no/prosjekter/bodo2016/" target="_blank">Bodø 2016</a>.</span></p>
+
+<div class="div"></div>
+
+<div class="grid final-grid">
+	<div class="col-50">
+		<img src="/../img/final/sn-lq.jpg" data-src="/../img/final/sn.jpg" alt="Heymat product in use" class="lazy lazyload">
+	</div>
+	<div class="col-50">
+		<img src="/../img/final/ln-lq.jpg" data-src="/../img/final/ln.jpg" alt="Heymat product in use" class="lazy lazyload">
+	</div>
+</div>
+
+<div class="div"></div>
+
+**I am also currently working on a site for Utværet Lånan**, which may or may not be live now. The site is also hosted on a <a href="http://46.101.94.163/" target="_blank">development server</a>, but this is subject to change so it may not be accessible. The old site (unless we have launched it), can be found at <a href="http://lanan.no" target="_blank">www.lanan.no</a>.
+
+**I wrote some articles** in my spare time, which we published on our official agency website. One of them wanted to teach people how to <a href="http://riktigspor.no/hvordan-google-bedre/" target="_blank">become better at Google</a>, whereas the other one merely brought attention to <a href="http://riktigspor.no/administrer-flere-kontoer-pa-instagram/" target="_blank">a new Instagram feature</a>.
+
+**My current biggest project**, which is ongoing through work and I wish I could show you the final product here, is support to <a href="https://instantarticles.fb.com" target="_blank">Facebook Instant Articles</a> on our agency site. I find it complex, but it's essentially something you need to keep in mind from the very beginning when developing new websites. For us, this meant I had to re-write our exisiting homepage and ideally keep the data from the database. It's a work-in-progress thing, and hopefully something we can launch in May or early July.
 
 <div class="div"></div>
 
@@ -161,7 +198,7 @@ I learned a lot over the past three months, and covered the following in one way
 <!-- I designed and developed fully functional websites with a backing CMS for clients. I covered product photography for clients, myself and our own agency. I made sites rank number #1 on Google. I managed Facebook pages, Instagram accounts and social media marketing. I tracked everything with modern day tools to offer insight and data-based future advice. And I'm really enjoying it. -->
 
 
-Through work I am challenged on a daily basis, and I hope to learn as much as I have over the next year as I have over the past three years of university – and hopefully not lose the lust for knowledge.
+I am happy to have chosen work placement as my project for this module, and I appreciate the fact that Riktig Spor let pick my own projects, as education was always a big concern for me. In total, I spent over 500 hours on this module, completing larger and smaller tasks, and obtaining new knowledge in the web industry every day. It certainly justified 12 weeks of work for me, and I am proud to show several projects at the finish-line.
 
 <div class="div"></div>
 
