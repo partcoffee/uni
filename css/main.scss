@@ -478,6 +478,13 @@ ul, li {
 	}
 }
 
+// Conditional class to not blur the secret project images
+.bit-narrow {
+	@media (min-width: $break) {
+		width: 80% !important;
+	}
+}
+
 /* Leading paragraph is slightly larger than the body-font */
 .lead {
 	font-size: 17px;

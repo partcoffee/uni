@@ -109,3 +109,18 @@ This is essentially to make each case study more approachable, avoiding adnormal
 </div>
 
 <div class="div"></div>
+
+> And a secret project.
+
+<div class="div"></div>
+
+<div class="grid final-grid bit-narrow">
+	<div class="col-50">
+		<img src="/../img/bit/spor-lq.png" data-src="/../img/bit/spor.png" alt="Image" class="fade wait lazy lazyload">
+	</div>
+	<div class="col-50">
+		<img src="/../img/bit/spor-lq.png" data-src="/../img/bit/spor2.png" alt="Image" class="fade wait lazy lazyload">
+	</div>
+</div>
+
+<div class="div"></div>

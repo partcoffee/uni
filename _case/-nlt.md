@@ -177,7 +177,13 @@ The development was fairly straight forward, but they required a few custom twea
 
 **I wrote some articles** in my spare time, which we published on our official agency website. One of them wanted to teach people how to <a href="http://riktigspor.no/hvordan-google-bedre/" target="_blank">become better at Google</a>, whereas the other one merely brought attention to <a href="http://riktigspor.no/administrer-flere-kontoer-pa-instagram/" target="_blank">a new Instagram feature</a>.
 
-**My current biggest project**, which is ongoing through work and I wish I could show you the final product here, is support to <a href="https://instantarticles.fb.com" target="_blank">Facebook Instant Articles</a> on our agency site. I find it complex, but it's essentially something you need to keep in mind from the very beginning when developing new websites. For us, this meant I had to re-write our exisiting homepage and ideally keep the data from the database. It's a work-in-progress thing, and hopefully something we can launch in May or early July.
+**My current biggest project**, which is ongoing through work and I wish I could show you the final product here, is support to <a href="https://instantarticles.fb.com" target="_blank">Facebook Instant Articles</a> on our agency site. I find it complex, but it's essentially something you need to keep in mind from the very beginning when developing new websites. For us, this meant I had to re-write our exisiting homepage and ideally keep the data from the database. It's a work-in-progress thing, and hopefully something we can launch in May or early July. It also comes with a slight redesign of our website, which I made a suggestion for:
+
+<div class="div"></div>
+
+{::nomarkdown}
+<img src="/../img/final/prop-lq.png" data-src="/../img/final/prop.png" alt="Riktig Spor proposal" class="lazy lazyload lined">
+{:/}
 
 <div class="div"></div>
 
