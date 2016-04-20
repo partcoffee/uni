@@ -35,7 +35,7 @@ For the majority of the jobs I'm interested in, my online presence and portfolio
 
 I had two different paths to go down for this project – showing everything noteworthy over the past three years or a small selection. The latter sounded more appealing to me, as I wanted the portfolio to reflect the kind of work I wanted to do in the future, rather than everything I have ever done.
 
-I had initial plans of a dedicated section to portrait- and product photography, along with a section for work experience, personal projects and client projects – and while I did enjoy the majority of these projects, they weren't really up to the standard I was aiming for. I also had to make time for photography as I wanted to avoid overused mock-ups for my personal portfolio.
+I had initial plans of a dedicated section to portrait- and product photography, along with a section for work experience, personal projects and client projects – and while I did enjoy the majority of these projects, they weren't really up to the standard I was aiming for. I also had to make time for photography as I wanted to avoid mock-ups and stock photography for my personal portfolio.
 
 <div class="div"></div>
 
@@ -89,7 +89,7 @@ I wanted something modern, and using subtle shades of white and black, I let the
 
 ## Production
 
-After writing all my text and shooting all the necessary pictures, I had to assemble everything. This was initially prototyped in low resolution Photoshop file, and later made production-ready in InDesign – using different weights of Work Sans for a timeless typographic impression. I would have liked to use Proxima Nova, but after test-printing, it did not work as well as it does on a screen-based medium. The final piece was printed as a 21cm x 27.5cm portfolio, on 32x 170g pages with a 300g front- and back page. You can see the final finished piece below or (hopefully) on your desk right now.
+After writing all my text and shooting all the necessary pictures, I had to assemble everything. This was initially prototyped in low resolution Photoshop file, and later made production-ready in InDesign – using different weights of Work Sans for a timeless typographic impression. I would have liked to use Proxima Nova, but after test-printing, it did not work as well as it does on a screen-based medium. Work Sans was also under a license I could use for print. The final piece was printed as a 21cm x 27.5cm portfolio, on 32x 170g pages with a 300g front- and back page. You can see the final finished piece below or (hopefully) on your desk right now.
 
 <div class="div"></div>
 
