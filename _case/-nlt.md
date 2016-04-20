@@ -132,7 +132,7 @@ I worked closely with the entire team, but most notably with Cathrine, a senior 
 
 <blockquote class="entry co">
 	<p>I have worked with Magnus on many different projects here at Riktig Spor. The most comprehensive web project has been for our client Heymat. This project included a Wordpress ecommerce shop in Norwegian and English, with a separate shop for Heymat’s dealers. It was a challenging job, and coincidentally the first web shop ever developed at Riktig Spor. We worked as a team with the initial setup, and Magnus fixed all the problems we ran into quickly and carefully. The dealer shop had to be tailored, and Magnus designed a solution that is clever, intuitive and looks great.<br><br>Over all, it is great to work with Magnus. His smart solutions, and good eye for design is a great combination that we really need at Riktig Spor.</p>
-	<p>Cathrine, Senior Graphic Designer</p>
+	<p>Cathrine, Senior Graphic Designer at Riktig Spor</p>
 </blockquote>
 
 <div class="div"></div>
