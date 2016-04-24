@@ -94,9 +94,9 @@ A different approach to my previous semester would be the addition of video cont
 	<li><a href="https://www.youtube.com/watch?v=m_Pn-1HegHI" target="_blank">Feedback Review</a></li>
 	<li><a href="https://www.youtube.com/watch?v=4oInLchLMLs" target="_blank">LazyLoading (demo)</a></li>
 	<li><a href="https://www.youtube.com/watch?v=fTWdSSj4Oc0" target="_blank">Layout issue (demo)</a></li>
-	<li><a href="https://www.youtube.com/watch?v=2pmHa1i8Gig" target="_blank">Work update (1/3)</a></li>
+	<li><a href="https://www.youtube.com/watch?v=q0H_heO6eaA" target="_blank">Work update (1/3)</a></li>
 	<li><a href="https://www.youtube.com/watch?v=7br_yy62--0" target="_blank">Work update (2/3)</a></li>
-	<li><a href="https://www.youtube.com/watch?v=q0H_heO6eaA" target="_blank">Work update (3/3)</a></li>
+	<li><a href="https://www.youtube.com/watch?v=2pmHa1i8Gig" target="_blank">Work update (3/3)</a></li>
 </ul>
 
 <div class="div"></div>
