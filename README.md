@@ -1,6 +1,6 @@
 # Uni portfolio
 
-This is my university portfolio for Q1/Q2 of 2016, a improved version of the 2015-build. The site is built from scratch with Jekyll for speed and performance.
+This is my university portfolio for Q1/Q2 of 2016, an improved version of the 2015-build. The site is built from scratch with Jekyll for speed and performance.
 
 For more information on Jekyll, I'd encourage reading their documentation, but the essence of it is a really good static site generator – saving me and other developers hours of work.
 
